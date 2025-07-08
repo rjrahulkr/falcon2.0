@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Falcon Futures Website
 
 Welcome to the official frontend source code of **Falcon Futures**, a SEBI-registered stock investment advisory company. This website provides information on financial services, market research, and customer support, built using static web technologies.
@@ -79,3 +80,6 @@ For any inquiries or assistance, please visit:
 
 This project is proprietary and maintained by Falcon Futures. Unauthorized copying or reuse is not permitted.
 
+=======
+# falcon2.0
+>>>>>>> a90f7f7121189aa96c9e62f807e20802ab65d987
