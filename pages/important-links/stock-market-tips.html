@@ -1,0 +1,1462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Tips - Falcon Futures</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="../../assets/image/logo.png">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../assets/css/main.css">    
+    <link rel="stylesheet" href="../../assets/css/responsive.css">
+    <link rel="stylesheet" href="../../assets/css/loader.css">
+    <link rel="canonical" href="https://falconfutures.in/your-page-path" />
+</head>
+<body>
+    
+    <div id="header"></div>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+       <div class="study-container">
+        <!-- Sidebar -->
+        <div class="study-sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h4 class="sidebar-title">Study Guide</h4>
+                <button class="sidebar-toggle" id="sidebarToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <nav class="sidebar-navigation">
+                <ul class="navigation-list">
+                    <li class="navigation-item">
+                        <a href="#" class="navigation-link active-link" data-page="0">
+                            <span class="link-number">I.</span>
+                            <span class="link-text">Introduction to Stock Market</span>
+                        </a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="#" class="navigation-link" data-page="1">
+                            <span class="link-number">II.</span>
+                            <span class="link-text">Key Participants</span>
+                        </a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="#" class="navigation-link" data-page="2">
+                            <span class="link-number">III.</span>
+                            <span class="link-text">Types of Investments</span>
+                        </a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="#" class="navigation-link" data-page="3">
+                            <span class="link-number">IV.</span>
+                            <span class="link-text">Data & Analysis</span>
+                        </a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="#" class="navigation-link" data-page="4">
+                            <span class="link-number">V.</span>
+                            <span class="link-text">Risk Management</span>
+                        </a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="#" class="navigation-link" data-page="5">
+                            <span class="link-number">VI.</span>
+                            <span class="link-text">Regulations</span>
+                        </a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="#" class="navigation-link" data-page="6">
+                            <span class="link-number">VII.</span>
+                            <span class="link-text">Glossary</span>
+                        </a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="#" class="navigation-link" data-page="7">
+                            <span class="link-number">VIII.</span>
+                            <span class="link-text">FAQs</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <div class="study-main">
+            <div class="content-wrapper">
+                <!-- Page Content -->
+                <div class="page-content" id="pageContent">
+                    <!-- Content will be loaded here -->
+                </div>
+
+                <!-- Navigation Controls -->
+                <div class="page-controls">
+                    <div class="control-buttons">
+                        <button class="control-button previous-button" id="prevBtn">
+                            <i class="fas fa-chevron-left"></i>
+                            <span>Previous</span>
+                        </button>
+                        
+                        <div class="page-indicator">
+                            <span class="current-page" id="currentPage">1</span>
+                            <span class="page-separator">of</span>
+                            <span class="total-pages" id="totalPages">8</span>
+                        </div>
+                        
+                        <button class="control-button next-button" id="nextBtn">
+                            <span>Next</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="page-numbers">
+                        <button class="page-number active-page-number" data-page="0">1</button>
+                        <button class="page-number" data-page="1">2</button>
+                        <button class="page-number" data-page="2">3</button>
+                        <button class="page-number" data-page="3">4</button>
+                        <button class="page-number" data-page="4">5</button>
+                        <button class="page-number" data-page="5">6</button>
+                        <button class="page-number" data-page="6">7</button>
+                        <button class="page-number" data-page="7">8</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </main>
+
+    <!-- Footer will be loaded here -->
+    <div id="footer"></div>
+
+    <!-- jQuery, Bootstrap JS, and Custom JS -->
+    
+    <script>
+        // Stock Market Study Guide JavaScript - Enhanced with Indian Market Content
+
+class StudyGuide {
+  constructor() {
+    this.currentPage = 0
+    this.totalPages = 12 // Increased to accommodate Indian market content
+    this.pages = this.initializePages()
+    this.init()
+  }
+
+  initializePages() {
+    return [
+      {
+        title: "Introduction to the Stock Market",
+        content: `
+                    <h1 class="main-heading">The Stock Market: A Comprehensive Guide</h1>
+                    
+                    <h2 class="section-heading">I. Introduction to the Stock Market</h2>
+                    
+                    <h3 class="subsection-heading">A. What is the Stock Market?</h3>
+                    <p class="content-paragraph">The stock market is a vast and intricate network where shares of companies and other financial instruments are bought and sold. It serves as a crucial mechanism for businesses to raise capital and for investors to participate in the growth of these businesses. While often referred to in singular terms, the "stock market" is not a single physical entity but rather a broad term encompassing various exchanges, brokerages, and over-the-counter (OTC) venues where these transactions occur.</p>
+                    
+                    <p class="content-paragraph">At its core, the stock market facilitates the exchange of ownership stakes in publicly traded companies. When a company goes public, it issues shares, which represent fractional ownership of the company. These shares are then traded among investors, allowing individuals and institutions to buy and sell these ownership claims. The price of these shares fluctuates based on a multitude of factors, primarily supply and demand dynamics, as well as the perceived value and future prospects of the underlying company.</p>
+                    
+                    <p class="content-paragraph"><span class="highlight-text">Reference:</span> <a href="https://www.investopedia.com/terms/s/stockmarket.asp" target="_blank" class="reference-link">Investopedia - Stock Market Basics</a></p>
+                    
+                    <h3 class="subsection-heading">B. How the Stock Market Works</h3>
+                    <p class="content-paragraph">The functioning of the stock market can be understood by examining its key components and processes:</p>
+                    
+                    <h4 class="subsection-heading">1. Primary vs. Secondary Market</h4>
+                    <p class="content-paragraph">The stock market operates through two main segments: the primary market and the secondary market.</p>
+                    
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Primary Market:</span> This is where new securities are issued for the first time. Companies raise capital by selling their shares directly to investors, often through an Initial Public Offering (IPO). In an IPO, a company transitions from private to public ownership, offering its shares to institutional investors and, in some cases, to the general public. Special Purpose Acquisition Companies (SPACs) have also emerged as an alternative route for companies to go public.</li>
+                        <li class="content-list-item"><span class="highlight-text">Secondary Market:</span> Once shares are issued in the primary market, they are subsequently traded among investors in the secondary market. This is the more commonly understood aspect of the stock market, where individuals and institutions buy and sell existing shares. Major stock exchanges like the New York Stock Exchange (NYSE) and Nasdaq are prominent examples of secondary markets, providing organized platforms for these transactions.</li>
+                    </ul>
+                    
+                    <h4 class="subsection-heading">2. Publicly Traded Companies</h4>
+                    <p class="content-paragraph">For a company to have its shares traded on a public exchange in the U.S., it must be registered with the Securities and Exchange Commission (SEC). This regulatory body ensures that companies meet stringent regulations and financial disclosure laws, providing transparency and protecting investors.</p>
+                    
+                    <h4 class="subsection-heading">3. Stock Exchanges</h4>
+                    <p class="content-paragraph">Stock exchanges are organized and regulated marketplaces where stocks and other securities are bought and sold. They provide a centralized platform, often virtual, for trading activities. Beyond the NYSE and Nasdaq, numerous other major exchanges exist globally, such as the London Stock Exchange, Tokyo Stock Exchange, and Shanghai Stock Exchange. These exchanges have their own internal rules and operate under national and local laws to ensure fair trading practices and provide real-time information on securities prices. A key benefit of trading on stock exchanges is liquidity, which refers to the ease with which stocks can be bought or sold.</p>
+                    
+                    <p class="content-paragraph"><span class="highlight-text">Reference:</span> <a href="https://www.sec.gov/investor/pubs/inwsmf.htm" target="_blank" class="reference-link">SEC - Introduction to Markets</a></p>
+                    
+                    <h4 class="subsection-heading">4. Over-the-Counter (OTC) Markets</h4>
+                    <p class="content-paragraph">In addition to exchanges, stocks can also be traded "over the counter" (OTC). OTC markets involve direct trading between investors, typically without the same level of regulation or public scrutiny as exchanges. This type of trading is often used for smaller, less liquid companies that may not meet the listing requirements of major stock exchanges. OTC trading occurs through a network of brokers and dealers who negotiate directly over computer networks and by phone.</p>
+                `,
+      },
+      {
+        title: "Indian Stock Market Overview",
+        content: `
+                    <h2 class="section-heading">II. Indian Stock Market Overview</h2>
+                    
+                    <p class="content-paragraph">The Indian stock market is one of the fastest-growing and most dynamic markets in the world. With a rich history dating back to 1875, it has evolved into a sophisticated financial ecosystem that plays a crucial role in India's economic development.</p>
+                    
+                    <h3 class="subsection-heading">A. Major Indian Stock Exchanges</h3>
+                    
+                    <h4 class="subsection-heading">1. Bombay Stock Exchange (BSE)</h4>
+                    <p class="content-paragraph">Established in 1875, BSE is Asia's oldest stock exchange and the world's 10th largest stock exchange by market capitalization. The BSE Sensex, comprising 30 well-established and financially sound companies, is the benchmark index that represents the overall market sentiment.</p>
+                    
+                    <p class="content-paragraph"><span class="highlight-text">Real-life Example:</span> Companies like Reliance Industries, Tata Consultancy Services (TCS), and HDFC Bank are part of the Sensex. When Reliance's stock price moves significantly, it directly impacts the Sensex due to its high weightage in the index.</p>
+                    
+                    <p class="content-paragraph"><span class="highlight-text">Reference:</span> <a href="https://www.bseindia.com/" target="_blank" class="reference-link">BSE Official Website</a></p>
+                    
+                    <h4 class="subsection-heading">2. National Stock Exchange (NSE)</h4>
+                    <p class="content-paragraph">Founded in 1992, NSE is India's largest stock exchange by trading volume and market capitalization. The Nifty 50 index, consisting of 50 large-cap stocks, is the primary benchmark index of NSE.</p>
+                    
+                    <p class="content-paragraph"><span class="highlight-text">Real-life Example:</span> NSE introduced electronic trading in India, revolutionizing the way stocks are traded. Companies like Infosys, ICICI Bank, and Asian Paints are major constituents of Nifty 50.</p>
+                    
+                    <p class="content-paragraph"><span class="highlight-text">Reference:</span> <a href="https://www.nseindia.com/" target="_blank" class="reference-link">NSE Official Website</a></p>
+                    
+                    <h3 class="subsection-heading">B. Market Indices</h3>
+                    
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">BSE Sensex:</span> Tracks 30 large-cap companies. As of 2024, it has crossed 70,000 points, reflecting India's economic growth.</li>
+                        <li class="content-list-item"><span class="highlight-text">Nifty 50:</span> Represents 50 companies across 13 sectors. It's widely used for index funds and ETFs.</li>
+                        <li class="content-list-item"><span class="highlight-text">Nifty Next 50:</span> Comprises the next 50 companies after Nifty 50, representing mid-cap opportunities.</li>
+                        <li class="content-list-item"><span class="highlight-text">BSE Midcap and Smallcap:</span> Track mid and small-cap companies respectively.</li>
+                    </ul>
+                    
+                    <h3 class="subsection-heading">C. Trading Hours and Sessions</h3>
+                    <p class="content-paragraph">Indian stock markets operate Monday to Friday with the following schedule:</p>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Pre-opening Session:</span> 9:00 AM to 9:15 AM</li>
+                        <li class="content-list-item"><span class="highlight-text">Regular Trading:</span> 9:15 AM to 3:30 PM</li>
+                        <li class="content-list-item"><span class="highlight-text">Post-closing Session:</span> 3:40 PM to 4:00 PM</li>
+                    </ul>
+                    
+                    <p class="content-paragraph"><span class="highlight-text">Reference:</span> <a href="https://www.sebi.gov.in/" target="_blank" class="reference-link">SEBI - Securities and Exchange Board of India</a></p>
+                    
+                    <h3 class="subsection-heading">D. Market Capitalization Segments</h3>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Large-cap:</span> Companies with market cap above ₹20,000 crores (e.g., Reliance, TCS, HDFC Bank)</li>
+                        <li class="content-list-item"><span class="highlight-text">Mid-cap:</span> Companies with market cap between ₹5,000-20,000 crores (e.g., Godrej Consumer, Muthoot Finance)</li>
+                        <li class="content-list-item"><span class="highlight-text">Small-cap:</span> Companies with market cap below ₹5,000 crores (e.g., various emerging companies)</li>
+                    </ul>
+                `,
+      },
+      {
+        title: "Key Participants in the Stock Market",
+        content: `
+                    <h2 class="section-heading">III. Key Participants in the Stock Market</h2>
+                    
+                    <p class="content-paragraph">The stock market is a complex ecosystem populated by a diverse range of participants, each playing a distinct role in its functioning. Understanding these roles is crucial for comprehending how the market operates and how various entities interact.</p>
+                    
+                    <h3 class="subsection-heading">A. Investors vs. Traders</h3>
+                    <p class="content-paragraph">While often used interchangeably, investors and traders approach the market with different objectives and time horizons:</p>
+                    
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Investors:</span> Generally adopt a long-term perspective, aiming for wealth growth over extended periods. They typically focus on the fundamental strength of companies, their financial performance, market position, and growth potential. Investors often seek income from dividends or capital appreciation over years, and their strategies are less concerned with short-term price fluctuations.</li>
+                        <li class="content-list-item"><span class="highlight-text">Traders:</span> Take a more short-term approach, seeking to profit from market volatility over shorter timeframes, ranging from seconds to months. They often rely on technical analysis, studying market trends and charts to predict future price movements. While trading offers the potential for quick profits, it also carries higher risks than long-term investing.</li>
+                    </ul>
+                    
+                    <p class="content-paragraph"><span class="highlight-text">Indian Example:</span> Rakesh Jhunjhunwala, known as India's Warren Buffett, was a long-term investor who held stocks like Titan, Crisil, and Lupin for years. In contrast, day traders on platforms like Zerodha or Upstox make multiple trades daily.</p>
+                    
+                    <h3 class="subsection-heading">B. Institutional vs. Retail Investors</h3>
+                    <p class="content-paragraph">Market participants can also be categorized by the scale and nature of their investments:</p>
+                    
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Institutional Investors:</span> These are large organizations that manage substantial amounts of money on behalf of others. Examples include pension funds, mutual funds, insurance companies, and hedge funds. Due to their large trading volumes, institutional investors often exert significant influence over the market.</li>
+                        <li class="content-list-item"><span class="highlight-text">Retail Investors:</span> These are individual investors who buy and sell securities for their own personal accounts. They range from beginners to experienced individuals and typically utilize online platforms for their trading activities.</li>
+                    </ul>
+                    
+                    <p class="content-paragraph"><span class="highlight-text">Indian Examples:</span></p>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Institutional:</span> LIC (Life Insurance Corporation), SBI Mutual Fund, HDFC Mutual Fund, Foreign Institutional Investors (FIIs) like BlackRock</li>
+                        <li class="content-list-item"><span class="highlight-text">Retail:</span> Individual investors using platforms like Zerodha, Groww, Angel One, or traditional brokers</li>
+                    </ul>
+                    
+                    <p class="content-paragraph"><span class="highlight-text">Reference:</span> <a href="https://www.amfiindia.com/" target="_blank" class="reference-link">AMFI - Association of Mutual Funds in India</a></p>
+                    
+                    <h3 class="subsection-heading">C. Indian Market Participants</h3>
+                    
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Domestic Institutional Investors (DIIs):</span> Include mutual funds, insurance companies, and pension funds. Examples: SBI Mutual Fund, HDFC Life, EPFO</li>
+                        <li class="content-list-item"><span class="highlight-text">Foreign Institutional Investors (FIIs):</span> International funds investing in Indian markets. Examples: BlackRock, Vanguard, Government of Singapore Investment Corporation</li>
+                        <li class="content-list-item"><span class="highlight-text">High Net Worth Individuals (HNIs):</span> Wealthy individuals with significant investment capacity</li>
+                        <li class="content-list-item"><span class="highlight-text">Retail Investors:</span> Growing rapidly, now over 8 crore demat accounts in India</li>
+                    </ul>
+                    
+                    <h3 class="subsection-heading">D. Market Infrastructure</h3>
+                    
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Stockbrokers:</span> SEBI-registered entities facilitating trades. Examples: Zerodha, Upstox, ICICI Direct, HDFC Securities</li>
+                        <li class="content-list-item"><span class="highlight-text">Depositories:</span> NSDL (National Securities Depository Limited) and CDSL (Central Depository Services Limited) maintain electronic records of securities</li>
+                        <li class="content-list-item"><span class="highlight-text">Clearing Corporations:</span> NSCCL and ICCL ensure settlement of trades</li>
+                        <li class="content-list-item"><span class="highlight-text">Credit Rating Agencies:</span> CRISIL, ICRA, CARE Ratings provide credit assessments</li>
+                    </ul>
+                    
+                    <p class="content-paragraph"><span class="highlight-text">Reference:</span> <a href="https://www.nsdl.co.in/" target="_blank" class="reference-link">NSDL Official Website</a></p>
+                `,
+      },
+      {
+        title: "Types of Investments in Indian Markets",
+        content: `
+                    <h2 class="section-heading">IV. Types of Investments in Indian Markets</h2>
+                    
+                    <p class="content-paragraph">The Indian financial market offers a diverse range of investment options catering to different risk appetites, investment horizons, and financial goals. Understanding these options is crucial for building a well-diversified portfolio.</p>
+                    
+                    <h3 class="subsection-heading">A. Equity Investments in India</h3>
+                    
+                    <h4 class="subsection-heading">1. Stocks/Shares</h4>
+                    <p class="content-paragraph">Indian stocks are categorized based on market capitalization and sectors:</p>
+                    
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Large-cap Stocks:</span> Established companies with market cap above ₹20,000 crores
+                            <br><strong>Examples:</strong> Reliance Industries (₹17+ lakh crores), TCS (₹13+ lakh crores), HDFC Bank (₹8+ lakh crores)</li>
+                        <li class="content-list-item"><span class="highlight-text">Mid-cap Stocks:</span> Growing companies with market cap between ₹5,000-20,000 crores
+                            <br><strong>Examples:</strong> Godrej Consumer Products, Muthoot Finance, Torrent Pharmaceuticals</li>
+                        <li class="content-list-item"><span class="highlight-text">Small-cap Stocks:</span> Emerging companies with market cap below ₹5,000 crores
+                            <br><strong>Examples:</strong> Various regional banks, specialty chemical companies</li>
+                    </ul>
+                    
+                    <p class="content-paragraph"><span class="highlight-text">Real-life Success Story:</span> An investor who bought Infosys shares during its IPO in 1993 at ₹95 per share would have seen their investment multiply over 500 times by 2024, considering stock splits and bonus issues.</p>
+                    
+                    <h4 class="subsection-heading">2. Sectoral Opportunities</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">IT Sector:</span> TCS, Infosys, Wipro, HCL Technologies</li>
+                        <li class="content-list-item"><span class="highlight-text">Banking & Financial Services:</span> HDFC Bank, ICICI Bank, SBI, Kotak Mahindra Bank</li>
+                        <li class="content-list-item"><span class="highlight-text">Pharmaceuticals:</span> Sun Pharma, Dr. Reddy's, Cipla, Lupin</li>
+                        <li class="content-list-item"><span class="highlight-text">FMCG:</span> Hindustan Unilever, ITC, Nestle India, Britannia</li>
+                        <li class="content-list-item"><span class="highlight-text">Automobiles:</span> Maruti Suzuki, Tata Motors, Mahindra & Mahindra</li>
+                    </ul>
+                    
+                    <p class="content-paragraph"><span class="highlight-text">Reference:</span> <a href="https://www.moneycontrol.com/markets/" target="_blank" class="reference-link">MoneyControl - Indian Markets</a></p>
+                    
+                    <h3 class="subsection-heading">B. Fixed-Income Investments</h3>
+                    
+                    <h4 class="subsection-heading">1. Government Securities</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Government Bonds:</span> 10-year G-Sec currently yields around 7-7.5% annually</li>
+                        <li class="content-list-item"><span class="highlight-text">Treasury Bills:</span> Short-term (91, 182, 364 days) government securities</li>
+                        <li class="content-list-item"><span class="highlight-text">State Development Loans (SDLs):</span> Issued by state governments</li>
+                    </ul>
+                    
+                    <h4 class="subsection-heading">2. Corporate Bonds</h4>
+                    <p class="content-paragraph">Companies like Bajaj Finance, HDFC, and Tata Group issue corporate bonds with yields typically 1-3% higher than government securities.</p>
+                    
+                    <h4 class="subsection-heading">3. Fixed Deposits and Small Savings</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Bank FDs:</span> Currently offering 6-7.5% for 1-5 year tenures</li>
+                        <li class="content-list-item"><span class="highlight-text">PPF (Public Provident Fund):</span> 15-year lock-in, currently 7.1% tax-free returns</li>
+                        <li class="content-list-item"><span class="highlight-text">NSC (National Savings Certificate):</span> 5-year tenure, 6.8% returns</li>
+                        <li class="content-list-item"><span class="highlight-text">ELSS:</span> Equity Linked Savings Scheme with 3-year lock-in and tax benefits</li>
+                    </ul>
+                    
+                    <h3 class="subsection-heading">C. Mutual Funds in India</h3>
+                    
+                    <h4 class="subsection-heading">1. Equity Mutual Funds</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Large-cap Funds:</span> Examples - SBI Bluechip Fund, ICICI Prudential Bluechip Fund</li>
+                        <li class="content-list-item"><span class="highlight-text">Mid-cap Funds:</span> Examples - DSP Midcap Fund, HDFC Mid-Cap Opportunities Fund</li>
+                        <li class="content-list-item"><span class="highlight-text">Small-cap Funds:</span> Examples - SBI Small Cap Fund, Nippon India Small Cap Fund</li>
+                        <li class="content-list-item"><span class="highlight-text">Sectoral/Thematic Funds:</span> Examples - ICICI Prudential Technology Fund, SBI Healthcare Opportunities Fund</li>
+                    </ul>
+                    
+                    <h4 class="subsection-heading">2. Debt Mutual Funds</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Liquid Funds:</span> For parking surplus cash, Examples - HDFC Liquid Fund</li>
+                        <li class="content-list-item"><span class="highlight-text">Short Duration Funds:</span> 1-3 year investment horizon</li>
+                        <li class="content-list-item"><span class="highlight-text">Long Duration Funds:</span> For long-term debt exposure</li>
+                    </ul>
+                    
+                    <p class="content-paragraph"><span class="highlight-text">Real-life Example:</span> SIP (Systematic Investment Plan) of ₹10,000 monthly in a diversified equity fund over 15 years, assuming 12% annual returns, would grow to approximately ₹50 lakhs.</p>
+                    
+                    <h3 class="subsection-heading">D. Alternative Investments</h3>
+                    
+                    <h4 class="subsection-heading">1. Real Estate Investment Trusts (REITs)</h4>
+                    <p class="content-paragraph">Examples: Embassy Office Parks REIT, Mindspace Business Parks REIT - offering 7-9% dividend yields</p>
+                    
+                    <h4 class="subsection-heading">2. Gold Investments</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Physical Gold:</span> Jewelry, coins, bars</li>
+                        <li class="content-list-item"><span class="highlight-text">Gold ETFs:</span> Examples - HDFC Gold ETF, ICICI Prudential Gold ETF</li>
+                        <li class="content-list-item"><span class="highlight-text">Gold Mutual Funds:</span> Fund of funds investing in Gold ETFs</li>
+                        <li class="content-list-item"><span class="highlight-text">Digital Gold:</span> Platforms like Paytm Gold, Google Pay Gold</li>
+                    </ul>
+                    
+                    <h4 class="subsection-heading">3. Commodities</h4>
+                    <p class="content-paragraph">Trading on MCX (Multi Commodity Exchange) - Gold, Silver, Crude Oil, Natural Gas, Agricultural commodities</p>
+                    
+                    <p class="content-paragraph"><span class="highlight-text">Reference:</span> <a href="https://www.valueresearchonline.com/" target="_blank" class="reference-link">Value Research - Mutual Fund Analysis</a></p>
+                `,
+      },
+      {
+        title: "Understanding Stock Market Data and Analysis",
+        content: `
+                    <h2 class="section-heading">V. Understanding Stock Market Data and Analysis</h2>
+                    
+                    <p class="content-paragraph">To make informed decisions in the stock market, investors and traders utilize various methods of data analysis. The two primary approaches are fundamental analysis and technical analysis.</p>
+                    
+                    <h3 class="subsection-heading">A. Fundamental Analysis</h3>
+                    <p class="content-paragraph">Fundamental analysis is a method used to determine the intrinsic value of a security by examining related economic, financial, and other qualitative and quantitative factors. The goal is to assess whether a stock is undervalued or overvalued relative to its true worth.</p>
+                    
+                    <h4 class="subsection-heading">Key Financial Ratios for Indian Stocks</h4>
+                    
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Price-to-Earnings (P/E) Ratio:</span> 
+                            <br><strong>Example:</strong> If TCS trades at ₹3,500 with EPS of ₹140, P/E = 25. Compare with industry average of 20-30 for IT companies.</li>
+                        <li class="content-list-item"><span class="highlight-text">Price-to-Book (P/B) Ratio:</span>
+                            <br><strong>Example:</strong> HDFC Bank with P/B of 2.5 indicates investors pay ₹2.5 for every ₹1 of book value.</li>
+                        <li class="content-list-item"><span class="highlight-text">Return on Equity (ROE):</span>
+                            <br><strong>Example:</strong> Asian Paints consistently maintains ROE above 25%, indicating efficient use of shareholders' equity.</li>
+                        <li class="content-list-item"><span class="highlight-text">Debt-to-Equity Ratio:</span>
+                            <br><strong>Example:</strong> Reliance Industries' D/E ratio of 0.3 shows conservative debt management.</li>
+                    </ul>
+                    
+                    <h4 class="subsection-heading">Indian Company Analysis Example: Infosys</h4>
+                    <p class="content-paragraph"><span class="highlight-text">Fundamental Strengths:</span></p>
+                    <ul class="content-list">
+                        <li class="content-list-item">Consistent revenue growth of 10-15% annually</li>
+                        <li class="content-list-item">Strong cash reserves of over ₹60,000 crores</li>
+                        <li class="content-list-item">Zero debt company</li>
+                        <li class="content-list-item">Regular dividend payments and buybacks</li>
+                        <li class="content-list-item">Strong presence in digital transformation services</li>
+                    </ul>
+                    
+                    <p class="content-paragraph"><span class="highlight-text">Reference:</span> <a href="https://www.screener.in/" target="_blank" class="reference-link">Screener.in - Indian Stock Analysis</a></p>
+                    
+                    <h3 class="subsection-heading">B. Technical Analysis in Indian Markets</h3>
+                    
+                    <h4 class="subsection-heading">Popular Technical Indicators</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Moving Averages:</span> 
+                            <br><strong>Example:</strong> When Nifty 50 crosses above its 200-day moving average, it's considered bullish. In March 2020, Nifty fell below this level, signaling a bear market.</li>
+                        <li class="content-list-item"><span class="highlight-text">RSI (Relative Strength Index):</span>
+                            <br><strong>Example:</strong> When Reliance's RSI goes above 70, it might be overbought; below 30 indicates oversold conditions.</li>
+                        <li class="content-list-item"><span class="highlight-text">Support and Resistance:</span>
+                            <br><strong>Example:</strong> Nifty 50 has strong support around 17,000 levels and resistance around 18,500 levels (as of recent trends).</li>
+                    </ul>
+                    
+                    <h4 class="subsection-heading">Chart Patterns in Indian Stocks</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Head and Shoulders:</span> Often seen in stocks like HDFC Bank during trend reversals</li>
+                        <li class="content-list-item"><span class="highlight-text">Cup and Handle:</span> Pattern observed in growth stocks like Asian Paints</li>
+                        <li class="content-list-item"><span class="highlight-text">Breakout Patterns:</span> Common in mid-cap stocks during earnings seasons</li>
+                    </ul>
+                    
+                    <h3 class="subsection-heading">C. Economic Indicators Affecting Indian Markets</h3>
+                    
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">GDP Growth:</span> India's GDP growth of 6-7% supports market optimism</li>
+                        <li class="content-list-item"><span class="highlight-text">Inflation (CPI):</span> RBI targets 4% inflation; higher levels may lead to rate hikes</li>
+                        <li class="content-list-item"><span class="highlight-text">Repo Rate:</span> Currently at 6.5%, affects borrowing costs and market liquidity</li>
+                        <li class="content-list-item"><span class="highlight-text">FII/DII Flows:</span> Foreign and domestic institutional money flows significantly impact market direction</li>
+                        <li class="content-list-item"><span class="highlight-text">Crude Oil Prices:</span> India imports 85% of oil; higher prices affect current account deficit</li>
+                    </ul>
+                    
+                    <h3 class="subsection-heading">D. Sector-Specific Analysis</h3>
+                    
+                    <h4 class="subsection-heading">IT Sector Analysis</h4>
+                    <p class="content-paragraph"><span class="highlight-text">Key Metrics:</span></p>
+                    <ul class="content-list">
+                        <li class="content-list-item">Revenue growth in constant currency</li>
+                        <li class="content-list-item">EBITDA margins (typically 20-25% for top companies)</li>
+                        <li class="content-list-item">Client addition and deal wins</li>
+                        <li class="content-list-item">Attrition rates (industry average 15-20%)</li>
+                    </ul>
+                    
+                    <h4 class="subsection-heading">Banking Sector Analysis</h4>
+                    <p class="content-paragraph"><span class="highlight-text">Key Metrics:</span></p>
+                    <ul class="content-list">
+                        <li class="content-list-item">Net Interest Margin (NIM) - typically 3-4% for private banks</li>
+                        <li class="content-list-item">Gross NPA and Net NPA ratios</li>
+                        <li class="content-list-item">Provision Coverage Ratio</li>
+                        <li class="content-list-item">Credit growth and CASA ratio</li>
+                    </ul>
+                    
+                    <p class="content-paragraph"><span class="highlight-text">Reference:</span> <a href="https://www.tradingview.com/markets/stocks-india/" target="_blank" class="reference-link">TradingView - Indian Stock Charts</a></p>
+                `,
+      },
+      {
+        title: "Risk Management and Investment Strategies",
+        content: `
+                    <h2 class="section-heading">VI. Risk Management and Investment Strategies</h2>
+                    
+                    <p class="content-paragraph">Effective risk management and a well-defined investment strategy are paramount for success in the stock market. These elements help investors navigate market volatility, protect capital, and work towards their financial goals.</p>
+                    
+                    <h3 class="subsection-heading">A. Risk Management in Indian Context</h3>
+                    
+                    <h4 class="subsection-heading">Types of Risks in Indian Markets</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Market Risk:</span> 
+                            <br><strong>Example:</strong> During COVID-19 (March 2020), Nifty fell from 12,000 to 7,500 in just one month, affecting all stocks regardless of fundamentals.</li>
+                        <li class="content-list-item"><span class="highlight-text">Currency Risk:</span> 
+                            <br><strong>Example:</strong> IT companies like Infosys benefit when rupee weakens against dollar, while importers like airlines suffer.</li>
+                        <li class="content-list-item"><span class="highlight-text">Regulatory Risk:</span>
+                            <br><strong>Example:</strong> Telecom sector faced massive losses when AGR (Adjusted Gross Revenue) ruling came in 2019, affecting Vodafone Idea severely.</li>
+                        <li class="content-list-item"><span class="highlight-text">Liquidity Risk:</span>
+                            <br><strong>Example:</strong> Small-cap stocks often face liquidity issues during market downturns, making it difficult to exit positions.</li>
+                    </ul>
+                    
+                    <h4 class="subsection-heading">Risk Management Tools</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Stop-Loss Orders:</span> Set at 8-10% below purchase price for equity investments</li>
+                        <li class="content-list-item"><span class="highlight-text">Position Sizing:</span> Never invest more than 5-10% of portfolio in a single stock</li>
+                        <li class="content-list-item"><span class="highlight-text">Hedging:</span> Using derivatives like futures and options to protect portfolio</li>
+                    </ul>
+                    
+                    <p class="content-paragraph"><span class="highlight-text">Reference:</span> <a href="https://zerodha.com/varsity/" target="_blank" class="reference-link">Zerodha Varsity - Risk Management</a></p>
+                    
+                    <h3 class="subsection-heading">B. Diversification Strategies for Indian Investors</h3>
+                    
+                    <h4 class="subsection-heading">Sector Diversification Example</h4>
+                    <p class="content-paragraph">A well-diversified Indian portfolio might include:</p>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">IT (20%):</span> TCS, Infosys, HCL Tech</li>
+                        <li class="content-list-item"><span class="highlight-text">Banking & Finance (25%):</span> HDFC Bank, ICICI Bank, SBI</li>
+                        <li class="content-list-item"><span class="highlight-text">FMCG (15%):</span> Hindustan Unilever, ITC, Nestle</li>
+                        <li class="content-list-item"><span class="highlight-text">Pharma (10%):</span> Sun Pharma, Dr. Reddy's</li>
+                        <li class="content-list-item"><span class="highlight-text">Auto (10%):</span> Maruti Suzuki, Tata Motors</li>
+                        <li class="content-list-item"><span class="highlight-text">Energy (10%):</span> Reliance Industries, ONGC</li>
+                        <li class="content-list-item"><span class="highlight-text">Others (10%):</span> Metals, Cement, Telecom</li>
+                    </ul>
+                    
+                    <h4 class="subsection-heading">Market Cap Diversification</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Large-cap (60%):</span> Stable, dividend-paying companies</li>
+                        <li class="content-list-item"><span class="highlight-text">Mid-cap (25%):</span> Growth-oriented companies</li>
+                        <li class="content-list-item"><span class="highlight-text">Small-cap (15%):</span> High-growth potential companies</li>
+                    </ul>
+                    
+                    <h3 class="subsection-heading">C. Popular Investment Strategies in India</h3>
+                    
+                    <h4 class="subsection-heading">1. SIP (Systematic Investment Plan)</h4>
+                    <p class="content-paragraph"><span class="highlight-text">Real-life Example:</span> Starting a ₹5,000 monthly SIP in a diversified equity fund at age 25, continuing till 60 (35 years), assuming 12% annual returns, would create a corpus of approximately ₹8.8 crores.</p>
+                    
+                    <p class="content-paragraph"><span class="highlight-text">Popular SIP Options:</span></p>
+                    <ul class="content-list">
+                        <li class="content-list-item">HDFC Top 100 Fund</li>
+                        <li class="content-list-item">SBI Bluechip Fund</li>
+                        <li class="content-list-item">Mirae Asset Large Cap Fund</li>
+                        <li class="content-list-item">Parag Parikh Flexi Cap Fund</li>
+                    </ul>
+                    
+                    <h4 class="subsection-heading">2. Value Investing</h4>
+                    <p class="content-paragraph"><span class="highlight-text">Indian Value Investing Example:</span> Investors who bought ITC at ₹150-200 levels during 2020-2021 when it was undervalued due to ESG concerns, saw good returns as the stock recovered to ₹400+ levels.</p>
+                    
+                    <p class="content-paragraph"><span class="highlight-text">Value Picks Criteria:</span></p>
+                    <ul class="content-list">
+                        <li class="content-list-item">P/E ratio below industry average</li>
+                        <li class="content-list-item">Strong balance sheet with low debt</li>
+                        <li class="content-list-item">Consistent dividend history</li>
+                        <li class="content-list-item">Temporary business challenges creating opportunity</li>
+                    </ul>
+                    
+                    <h4 class="subsection-heading">3. Growth Investing</h4>
+                    <p class="content-paragraph"><span class="highlight-text">Success Story:</span> Investors who identified and invested in Asian Paints in early 2000s at ₹50-100 levels saw the stock grow to ₹3,000+ levels, delivering over 30x returns in 20 years.</p>
+                    
+                    <p class="content-paragraph"><span class="highlight-text">Growth Stock Characteristics:</span></p>
+                    <ul class="content-list">
+                        <li class="content-list-item">Revenue growth of 15%+ annually</li>
+                        <li class="content-list-item">Expanding market share</li>
+                        <li class="content-list-item">Strong brand moat</li>
+                        <li class="content-list-item">Scalable business model</li>
+                    </ul>
+                    
+                    <h4 class="subsection-heading">4. Dividend Investing</h4>
+                    <p class="content-paragraph"><span class="highlight-text">High Dividend Yield Stocks:</span></p>
+                    <ul class="content-list">
+                        <li class="content-list-item">Coal India: 7-8% dividend yield</li>
+                        <li class="content-list-item">ONGC: 6-7% dividend yield</li>
+                        <li class="content-list-item">ITC: 4-5% dividend yield</li>
+                        <li class="content-list-item">Hindustan Zinc: 8-10% dividend yield</li>
+                    </ul>
+                    
+                    <h3 class="subsection-heading">D. Tax-Efficient Investing in India</h3>
+                    
+                    <h4 class="subsection-heading">Capital Gains Tax Structure</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Short-term (< 1 year):</span> 15% tax on equity gains</li>
+                        <li class="content-list-item"><span class="highlight-text">Long-term (> 1 year):</span> 10% tax on gains above ₹1 lakh annually</li>
+                        <li class="content-list-item"><span class="highlight-text">Dividend Tax:</span> Added to income and taxed as per slab rates</li>
+                    </ul>
+                    
+                    <h4 class="subsection-heading">Tax-Saving Investment Options</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">ELSS Mutual Funds:</span> 3-year lock-in, up to ₹1.5 lakh deduction under 80C</li>
+                        <li class="content-list-item"><span class="highlight-text">PPF:</span> 15-year lock-in, tax-free returns</li>
+                        <li class="content-list-item"><span class="highlight-text">NPS:</span> Additional ₹50,000 deduction under 80CCD(1B)</li>
+                    </ul>
+                    
+                    <p class="content-paragraph"><span class="highlight-text">Reference:</span> <a href="https://cleartax.in/s/income-tax-slabs" target="_blank" class="reference-link">ClearTax - Tax Planning Guide</a></p>
+                `,
+      },
+      {
+        title: "Indian Market Regulations and SEBI",
+        content: `
+                    <h2 class="section-heading">VII. Indian Market Regulations and SEBI</h2>
+                    
+                    <p class="content-paragraph">The Indian securities market is regulated by the Securities and Exchange Board of India (SEBI), established in 1992. SEBI ensures fair practices, protects investor interests, and promotes the development of the securities market.</p>
+                    
+                    <h3 class="subsection-heading">A. SEBI - The Market Regulator</h3>
+                    
+                    <h4 class="subsection-heading">SEBI's Key Functions</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Protecting Investor Interests:</span> Ensuring fair disclosure and preventing market manipulation</li>
+                        <li class="content-list-item"><span class="highlight-text">Regulating Stock Exchanges:</span> Overseeing BSE, NSE, and other exchanges</li>
+                        <li class="content-list-item"><span class="highlight-text">Monitoring Mutual Funds:</span> Regulating AMCs and fund operations</li>
+                        <li class="content-list-item"><span class="highlight-text">Corporate Governance:</span> Ensuring listed companies follow disclosure norms</li>
+                    </ul>
+                    
+                    <p class="content-paragraph"><span class="highlight-text">Reference:</span> <a href="https://www.sebi.gov.in/" target="_blank" class="reference-link">SEBI Official Website</a></p>
+                    
+                    <h3 class="subsection-heading">B. Key SEBI Regulations</h3>
+                    
+                    <h4 class="subsection-heading">1. Listing Regulations</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Minimum Public Shareholding:</span> 25% for most companies</li>
+                        <li class="content-list-item"><span class="highlight-text">Board Composition:</span> Minimum 50% independent directors for top 1000 companies</li>
+                        <li class="content-list-item"><span class="highlight-text">Quarterly Results:</span> Mandatory disclosure within 45 days of quarter end</li>
+                    </ul>
+                    
+                    <h4 class="subsection-heading">2. Insider Trading Regulations</h4>
+                    <p class="content-paragraph"><span class="highlight-text">Real-life Case:</span> In 2020, SEBI imposed penalties on several individuals for insider trading in Reliance Industries shares before the Jio-Facebook deal announcement.</p>
+                    
+                    <ul class="content-list">
+                        <li class="content-list-item">Trading windows closed during earnings season</li>
+                        <li class="content-list-item">Designated persons must pre-clear trades</li>
+                        <li class="content-list-item">Unpublished Price Sensitive Information (UPSI) restrictions</li>
+                    </ul>
+                    
+                    <h4 class="subsection-heading">3. Mutual Fund Regulations</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Expense Ratio Caps:</span> Maximum 2.25% for equity funds</li>
+                        <li class="content-list-item"><span class="highlight-text">Portfolio Disclosure:</span> Monthly portfolio disclosure mandatory</li>
+                        <li class="content-list-item"><span class="highlight-text">Risk-o-meter:</span> All schemes must display risk levels</li>
+                    </ul>
+                    
+                    <h3 class="subsection-heading">C. Investor Protection Measures</h3>
+                    
+                    <h4 class="subsection-heading">1. Investor Grievance Redressal</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">SCORES Portal:</span> Online complaint registration system</li>
+                        <li class="content-list-item"><span class="highlight-text">Ombudsman Scheme:</span> For mutual fund and insurance complaints</li>
+                        <li class="content-list-item"><span class="highlight-text">Investor Protection Fund:</span> Compensation for eligible investors</li>
+                    </ul>
+                    
+                    <h4 class="subsection-heading">2. Market Infrastructure Protection</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Settlement Guarantee Fund:</span> Protects against broker defaults</li>
+                        <li class="content-list-item"><span class="highlight-text">Investor Protection Fund:</span> BSE and NSE maintain funds for investor compensation</li>
+                        <li class="content-list-item"><span class="highlight-text">Surveillance Systems:</span> Real-time monitoring of unusual trading patterns</li>
+                    </ul>
+                    
+                    <h3 class="subsection-heading">D. Recent Regulatory Changes</h3>
+                    
+                    <h4 class="subsection-heading">1. T+1 Settlement</h4>
+                    <p class="content-paragraph">From 2023, Indian markets moved to T+1 settlement (trade plus one day) from T+2, making India one of the few countries with such quick settlement.</p>
+                    
+                    <h4 class="subsection-heading">2. ESG Disclosures</h4>
+                    <p class="content-paragraph">Top 1000 listed companies must file Business Responsibility and Sustainability Reports (BRSR) with detailed ESG metrics.</p>
+                    
+                    <h4 class="subsection-heading">3. Digital KYC</h4>
+                    <p class="content-paragraph">Video-based KYC and Aadhaar-based eKYC have simplified account opening processes.</p>
+                    
+                    <h3 class="subsection-heading">E. Penalties and Enforcement</h3>
+                    
+                    <h4 class="subsection-heading">Notable SEBI Actions</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Sahara Group Case:</span> ₹24,000+ crores recovery for illegal money collection</li>
+                        <li class="content-list-item"><span class="highlight-text">Karvy Scam:</span> Broker license cancelled for misusing client securities</li>
+                        <li class="content-list-item"><span class="highlight-text">NSE Co-location Case:</span> Penalties for providing unfair access to some brokers</li>
+                    </ul>
+                    
+                    <h3 class="subsection-heading">F. Investor Education Initiatives</h3>
+                    
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Investor Awareness Programs:</span> Regular workshops and seminars</li>
+                        <li class="content-list-item"><span class="highlight-text">Financial Literacy:</span> School and college programs</li>
+                        <li class="content-list-item"><span class="highlight-text">Digital Platforms:</span> Mobile apps and online resources</li>
+                    </ul>
+                    
+                    <p class="content-paragraph"><span class="highlight-text">Reference:</span> <a href="https://investor.sebi.gov.in/" target="_blank" class="reference-link">SEBI Investor Portal</a></p>
+                `,
+      },
+      {
+        title: "Indian Stock Market Success Stories",
+        content: `
+                    <h2 class="section-heading">VIII. Indian Stock Market Success Stories</h2>
+                    
+                    <p class="content-paragraph">Learning from successful investors and companies provides valuable insights into wealth creation through equity markets. Here are some inspiring stories from the Indian stock market.</p>
+                    
+                    <h3 class="subsection-heading">A. Legendary Indian Investors</h3>
+                    
+                    <h4 class="subsection-heading">1. Rakesh Jhunjhunwala (1960-2022)</h4>
+                    <p class="content-paragraph">Known as India's Warren Buffett, Rakesh Jhunjhunwala turned ₹5,000 into over ₹40,000 crores through stock market investments.</p>
+                    
+                    <p class="content-paragraph"><span class="highlight-text">Key Holdings and Returns:</span></p>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Titan Company:</span> Bought at ₹3-5 in early 2000s, held till ₹2,500+ levels (500x+ returns)</li>
+                        <li class="content-list-item"><span class="highlight-text">Lupin:</span> Invested when it was ₹10-20, saw it reach ₹2,000+ levels</li>
+                        <li class="content-list-item"><span class="highlight-text">Crisil:</span> Early investor, benefited from consistent growth</li>
+                        <li class="content-list-item"><span class="highlight-text">Star Health:</span> Promoted the company and took it public</li>
+                    </ul>
+                    
+                    <p class="content-paragraph"><span class="highlight-text">Investment Philosophy:</span></p>
+                    <ul class="content-list">
+                        <li class="content-list-item">Buy and hold for long term</li>
+                        <li class="content-list-item">Invest in businesses, not just stocks</li>
+                        <li class="content-list-item">Focus on management quality</li>
+                        <li class="content-list-item">Stay invested in India's growth story</li>
+                    </ul>
+                    
+                    <h4 class="subsection-heading">2. Radhakishan Damani</h4>
+                    <p class="content-paragraph">Founder of DMart retail chain, Damani is known for his value investing approach and long-term wealth creation.</p>
+                    
+                    <p class="content-paragraph"><span class="highlight-text">Notable Investments:</span></p>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">VST Industries:</span> Long-term holding in tobacco company</li>
+                        <li class="content-list-item"><span class="highlight-text">India Cements:</span> Significant stake in cement company</li>
+                        <li class="content-list-item"><span class="highlight-text">Sundaram Finance:</span> NBFC investment</li>
+                    </ul>
+                    
+                    <h3 class="subsection-heading">B. Multibagger Stock Stories</h3>
+                    
+                    <h4 class="subsection-heading">1. Asian Paints - The Consistent Compounder</h4>
+                    <p class="content-paragraph"><span class="highlight-text">20-Year Journey (2003-2023):</span></p>
+                    <ul class="content-list">
+                        <li class="content-list-item">2003 Price: ₹50-60</li>
+                        <li class="content-list-item">2023 Price: ₹3,000+</li>
+                        <li class="content-list-item">Returns: 50x+ in 20 years</li>
+                        <li class="content-list-item">CAGR: ~20% annually</li>
+                    </ul>
+                    
+                    <p class="content-paragraph"><span class="highlight-text">Success Factors:</span></p>
+                    <ul class="content-list">
+                        <li class="content-list-item">Strong brand moat in decorative paints</li>
+                        <li class="content-list-item">Consistent 15-20% revenue growth</li>
+                        <li class="content-list-item">High ROE of 25%+ consistently</li>
+                        <li class="content-list-item">Excellent distribution network</li>
+                        <li class="content-list-item">Innovation in products and services</li>
+                    </ul>
+                    
+                    <h4 class="subsection-heading">2. Page Industries - The Innerwear King</h4>
+                    <p class="content-paragraph"><span class="highlight-text">15-Year Journey (2008-2023):</span></p>
+                    <ul class="content-list">
+                        <li class="content-list-item">2008 Price: ₹200-300</li>
+                        <li class="content-list-item">2023 Price: ₹40,000+</li>
+                        <li class="content-list-item">Returns: 130x+ in 15 years</li>
+                        <li class="content-list-item">CAGR: ~35% annually</li>
+                    </ul>
+                    
+                    <p class="content-paragraph"><span class="highlight-text">Growth Drivers:</span></p>
+                    <ul class="content-list">
+                        <li class="content-list-item">Exclusive licensing for Jockey brand in India</li>
+                        <li class="content-list-item">Premium positioning and quality</li>
+                        <li class="content-list-item">Expanding retail presence</li>
+                        <li class="content-list-item">Strong cash generation and zero debt</li>
+                    </ul>
+                    
+                    <h4 class="subsection-heading">3. Bajaj Finance - The NBFC Success Story</h4>
+                    <p class="content-paragraph"><span class="highlight-text">12-Year Journey (2011-2023):</span></p>
+                    <ul class="content-list">
+                        <li class="content-list-item">2011 Price: ₹200-250</li>
+                        <li class="content-list-item">2023 Price: ₹7,000+</li>
+                        <li class="content-list-item">Returns: 30x+ in 12 years</li>
+                        <li class="content-list-item">CAGR: ~32% annually</li>
+                    </ul>
+                    
+                    <p class="content-paragraph"><span class="highlight-text">Business Transformation:</span></p>
+                    <ul class="content-list">
+                        <li class="content-list-item">From consumer durables financing to diversified NBFC</li>
+                        <li class="content-list-item">Digital transformation and fintech adoption</li>
+                        <li class="content-list-item">Strong asset quality and risk management</li>
+                        <li class="content-list-item">Consistent 25%+ loan book growth</li>
+                    </ul>
+                    
+                    <h3 class="subsection-heading">C. IPO Success Stories</h3>
+                    
+                    <h4 class="subsection-heading">1. Avenue Supermarts (DMart)</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item">IPO Price (2017): ₹299</li>
+                        <li class="content-list-item">Current Price (2023): ₹4,000+</li>
+                        <li class="content-list-item">Returns: 13x+ in 6 years</li>
+                        <li class="content-list-item">Business: Retail chain with efficient operations</li>
+                    </ul>
+                    
+                    <h4 class="subsection-heading">2. HDFC AMC</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item">IPO Price (2018): ₹1,100</li>
+                        <li class="content-list-item">Peak Price: ₹4,000+</li>
+                        <li class="content-list-item">Business: Asset management with strong AUM growth</li>
+                    </ul>
+                    
+                    <h3 class="subsection-heading">D. Sector Rotation Success</h3>
+                    
+                    <h4 class="subsection-heading">IT Sector Boom (2020-2021)</h4>
+                    <p class="content-paragraph">During COVID-19, IT stocks delivered exceptional returns:</p>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">TCS:</span> ₹2,000 to ₹4,000+ (100% returns)</li>
+                        <li class="content-list-item"><span class="highlight-text">Infosys:</span> ₹800 to ₹1,800+ (125% returns)</li>
+                        <li class="content-list-item"><span class="highlight-text">HCL Tech:</span> ₹500 to ₹1,300+ (160% returns)</li>
+                    </ul>
+                    
+                    <h4 class="subsection-heading">Pharma Sector Rally (2020)</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Dr. Reddy's:</span> ₹3,000 to ₹6,000+ (100% returns)</li>
+                        <li class="content-list-item"><span class="highlight-text">Cipla:</span> ₹400 to ₹1,000+ (150% returns)</li>
+                        <li class="content-list-item"><span class="highlight-text">Divi's Labs:</span> ₹2,000 to ₹5,000+ (150% returns)</li>
+                    </ul>
+                    
+                    <h3 class="subsection-heading">E. Lessons from Success Stories</h3>
+                    
+                    <h4 class="subsection-heading">Common Success Factors</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Long-term Perspective:</span> Most multibaggers require 5-10+ years to deliver exceptional returns</li>
+                        <li class="content-list-item"><span class="highlight-text">Quality Management:</span> Companies with ethical and capable leadership outperform</li>
+                        <li class="content-list-item"><span class="highlight-text">Scalable Business Models:</span> Companies that can grow without proportional capital increase</li>
+                        <li class="content-list-item"><span class="highlight-text">Market Leadership:</span> Companies with strong competitive moats</li>
+                        <li class="content-list-item"><span class="highlight-text">Consistent Execution:</span> Regular delivery on promises and guidance</li>
+                    </ul>
+                    
+                    <h4 class="subsection-heading">Key Takeaways for Investors</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item">Start early and stay invested</li>
+                        <li class="content-list-item">Focus on business fundamentals over stock prices</li>
+                        <li class="content-list-item">Diversify across sectors and market caps</li>
+                        <li class="content-list-item">Have patience and conviction in quality companies</li>
+                        <li class="content-list-item">Learn from mistakes and keep improving</li>
+                    </ul>
+                    
+                    <p class="content-paragraph"><span class="highlight-text">Reference:</span> <a href="https://www.moneycontrol.com/news/business/markets/" target="_blank" class="reference-link">MoneyControl Market News</a></p>
+                `,
+      },
+      {
+        title: "Practical Guide to Start Investing",
+        content: `
+                    <h2 class="section-heading">IX. Practical Guide to Start Investing in Indian Markets</h2>
+                    
+                    <p class="content-paragraph">This comprehensive guide will walk you through the practical steps to begin your investment journey in Indian stock markets, from opening accounts to making your first investment.</p>
+                    
+                    <h3 class="subsection-heading">A. Getting Started - Documentation and Accounts</h3>
+                    
+                    <h4 class="subsection-heading">1. Essential Documents Required</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">PAN Card:</span> Mandatory for all financial transactions</li>
+                        <li class="content-list-item"><span class="highlight-text">Aadhaar Card:</span> For address proof and eKYC</li>
+                        <li class="content-list-item"><span class="highlight-text">Bank Account:</span> Savings account for fund transfers</li>
+                        <li class="content-list-item"><span class="highlight-text">Income Proof:</span> Salary slips, ITR, or bank statements</li>
+                        <li class="content-list-item"><span class="highlight-text">Photographs:</span> Passport-size photos</li>
+                    </ul>
+                    
+                    <h4 class="subsection-heading">2. Opening a Demat and Trading Account</h4>
+                    
+                    <p class="content-paragraph"><span class="highlight-text">Popular Discount Brokers:</span></p>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Zerodha:</span> 
+                            <br>• Account opening: Free
+                            <br>• Equity delivery: Free
+                            <br>• Intraday/F&O: ₹20 per order
+                            <br>• AMC: ₹300 per year</li>
+                        <li class="content-list-item"><span class="highlight-text">Upstox:</span>
+                            <br>• Account opening: Free
+                            <br>• Equity delivery: Free
+                            <br>• Intraday/F&O: ₹20 per order
+                            <br>• AMC: ₹150 per year</li>
+                        <li class="content-list-item"><span class="highlight-text">Groww:</span>
+                            <br>• Account opening: Free
+                            <br>• Equity delivery: Free
+                            <br>• Mutual funds: Free
+                            <br>• AMC: Free</li>
+                    </ul>
+                    
+                    <p class="content-paragraph"><span class="highlight-text">Full-Service Brokers:</span></p>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">ICICI Direct:</span> Research reports, advisory services</li>
+                        <li class="content-list-item"><span class="highlight-text">HDFC Securities:</span> Comprehensive investment solutions</li>
+                        <li class="content-list-item"><span class="highlight-text">Kotak Securities:</span> Premium research and advisory</li>
+                    </ul>
+                    
+                    <p class="content-paragraph"><span class="highlight-text">Reference:</span> <a href="https://zerodha.com/open-account" target="_blank" class="reference-link">Zerodha Account Opening</a></p>
+                    
+                    <h3 class="subsection-heading">B. Step-by-Step Investment Process</h3>
+                    
+                    <h4 class="subsection-heading">1. First Investment - ₹10,000 Portfolio Example</h4>
+                    
+                    <p class="content-paragraph"><span class="highlight-text">Conservative Approach (New Investor):</span></p>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Large-cap Mutual Fund SIP (₹3,000):</span> HDFC Top 100 Fund</li>
+                        <li class="content-list-item"><span class="highlight-text">Diversified Equity Fund SIP (₹3,000):</span> Parag Parikh Flexi Cap Fund</li>
+                        <li class="content-list-item"><span class="highlight-text">Index Fund SIP (₹2,000):</span> UTI Nifty Index Fund</li>
+                        <li class="content-list-item"><span class="highlight-text">Direct Stock Investment (₹2,000):</span> Blue-chip stock like TCS or HDFC Bank</li>
+                    </ul>
+                    
+                    <p class="content-paragraph"><span class="highlight-text">Moderate Risk Approach:</span></p>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Large-cap Stocks (₹4,000):</span> TCS, HDFC Bank</li>
+                        <li class="content-list-item"><span class="highlight-text">Mid-cap Fund SIP (₹3,000):</span> HDFC Mid-Cap Opportunities Fund</li>
+                        <li class="content-list-item"><span class="highlight-text">Sectoral ETF (₹2,000):</span> Nifty IT ETF or Nifty Bank ETF</li>
+                        <li class="content-list-item"><span class="highlight-text">Gold ETF (₹1,000):</span> HDFC Gold ETF</li>
+                    </ul>
+                    
+                    <h4 class="subsection-heading">2. How to Place Your First Order</h4>
+                    
+                    <p class="content-paragraph"><span class="highlight-text">Buying TCS Shares - Step by Step:</span></p>
+                    <ol class="content-list">
+                        <li class="content-list-item">Login to your trading app (Zerodha Kite/Upstox Pro)</li>
+                        <li class="content-list-item">Search for "TCS" or "Tata Consultancy Services"</li>
+                        <li class="content-list-item">Check current market price (e.g., ₹3,500)</li>
+                        <li class="content-list-item">Click "Buy" and select order type:
+                            <br>• <span class="highlight-text">Market Order:</span> Buy at current market price
+                            <br>• <span class="highlight-text">Limit Order:</span> Buy at specific price (e.g., ₹3,480)</li>
+                        <li class="content-list-item">Enter quantity (e.g., 1 share for ₹3,500)</li>
+                        <li class="content-list-item">Select "CNC" for delivery (long-term holding)</li>
+                        <li class="content-list-item">Review and confirm order</li>
+                    </ol>
+                    
+                    <h3 class="subsection-heading">C. Building Your Investment Portfolio</h3>
+                    
+                    <h4 class="subsection-heading">1. Age-Based Asset Allocation</h4>
+                    
+                    <p class="content-paragraph"><span class="highlight-text">Age 25-35 (Aggressive Growth):</span></p>
+                    <ul class="content-list">
+                        <li class="content-list-item">Equity: 80-90%</li>
+                        <li class="content-list-item">Debt: 10-15%</li>
+                        <li class="content-list-item">Gold: 5%</li>
+                    </ul>
+                    
+                    <p class="content-paragraph"><span class="highlight-text">Age 35-50 (Balanced Growth):</span></p>
+                    <ul class="content-list">
+                        <li class="content-list-item">Equity: 60-70%</li>
+                        <li class="content-list-item">Debt: 25-30%</li>
+                        <li class="content-list-item">Gold: 5-10%</li>
+                    </ul>
+                    
+                    <p class="content-paragraph"><span class="highlight-text">Age 50+ (Conservative):</span></p>
+                    <ul class="content-list">
+                        <li class="content-list-item">Equity: 40-50%</li>
+                        <li class="content-list-item">Debt: 40-50%</li>
+                        <li class="content-list-item">Gold: 10%</li>
+                    </ul>
+                    
+                    <h4 class="subsection-heading">2. Monthly Investment Plan - ₹25,000</h4>
+                    
+                    <p class="content-paragraph"><span class="highlight-text">Diversified Monthly Allocation:</span></p>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Large-cap SIP (₹8,000):</span> HDFC Top 100 Fund</li>
+                        <li class="content-list-item"><span class="highlight-text">Mid-cap SIP (₹5,000):</span> DSP Midcap Fund</li>
+                        <li class="content-list-item"><span class="highlight-text">International Fund SIP (₹3,000):</span> Motilal Oswal Nasdaq 100 Fund</li>
+                        <li class="content-list-item"><span class="highlight-text">Direct Equity (₹5,000):</span> Quality stocks accumulation</li>
+                        <li class="content-list-item"><span class="highlight-text">Debt Fund SIP (₹3,000):</span> HDFC Short Term Debt Fund</li>
+                        <li class="content-list-item"><span class="highlight-text">Gold ETF (₹1,000):</span> HDFC Gold ETF</li>
+                    </ul>
+                    
+                    <h3 class="subsection-heading">D. Common Mistakes to Avoid</h3>
+                    
+                    <h4 class="subsection-heading">1. Beginner Mistakes</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Trying to Time the Market:</span> Instead, use SIP for regular investing</li>
+                        <li class="content-list-item"><span class="highlight-text">Following Tips Blindly:</span> Do your own research before investing</li>
+                        <li class="content-list-item"><span class="highlight-text">Panic Selling:</span> Stay calm during market downturns</li>
+                        <li class="content-list-item"><span class="highlight-text">Over-diversification:</span> 15-20 stocks are sufficient for retail investors</li>
+                        <li class="content-list-item"><span class="highlight-text">Ignoring Costs:</span> High expense ratios can erode returns</li>
+                    </ul>
+                    
+                    <h4 class="subsection-heading">2. Emotional Investing Pitfalls</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">FOMO (Fear of Missing Out):</span> Chasing hot stocks or sectors</li>
+                        <li class="content-list-item"><span class="highlight-text">Herd Mentality:</span> Following crowd without analysis</li>
+                        <li class="content-list-item"><span class="highlight-text">Overconfidence:</span> Taking excessive risks after initial success</li>
+                        <li class="content-list-item"><span class="highlight-text">Loss Aversion:</span> Holding losing stocks too long</li>
+                    </ul>
+                    
+                    <h3 class="subsection-heading">E. Monitoring and Review</h3>
+                    
+                    <h4 class="subsection-heading">1. Portfolio Tracking Tools</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Broker Apps:</span> Zerodha Console, Upstox Pro</li>
+                        <li class="content-list-item"><span class="highlight-text">Portfolio Trackers:</span> MoneyControl, ET Money, Groww</li>
+                        <li class="content-list-item"><span class="highlight-text">Mutual Fund Platforms:</span> Kuvera, Paytm Money</li>
+                    </ul>
+                    
+                    <h4 class="subsection-heading">2. Review Frequency</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Daily:</span> Market news and major developments</li>
+                        <li class="content-list-item"><span class="highlight-text">Monthly:</span> Portfolio performance review</li>
+                        <li class="content-list-item"><span class="highlight-text">Quarterly:</span> Rebalancing if required</li>
+                        <li class="content-list-item"><span class="highlight-text">Annually:</span> Comprehensive portfolio review and tax planning</li>
+                    </ul>
+                    
+                    <p class="content-paragraph"><span class="highlight-text">Reference:</span> <a href="https://groww.in/blog/how-to-start-investing" target="_blank" class="reference-link">Groww - Investment Guide</a></p>
+                `,
+      },
+      {
+        title: "Glossary of Indian Stock Market Terms",
+        content: `
+                    <h2 class="section-heading">X. Glossary of Indian Stock Market Terms</h2>
+                    
+                    <p class="content-paragraph">Understanding the terminology used in the Indian stock market is essential for effective participation and comprehension. Here is a comprehensive glossary of terms specific to Indian markets:</p>
+                    
+                    <div class="content-list">
+                        <div class="content-list-item">
+                            <span class="definition-term">AMFI:</span> Association of Mutual Funds in India - The industry body for mutual funds in India that sets standards and promotes the mutual fund industry.
+                        </div>
+                        
+                        <div class="content-list-item">
+                            <span class="definition-term">BSE Sensex:</span> The benchmark index of Bombay Stock Exchange comprising 30 large-cap stocks. It's calculated using free-float market capitalization methodology.
+                        </div>
+                        
+                        <div class="content-list-item">
+                            <span class="definition-term">CASA Ratio:</span> Current Account and Savings Account ratio - A key metric for banks indicating the proportion of low-cost deposits. Higher CASA ratio is better for banks' profitability.
+                        </div>
+                        
+                        <div class="content-list-item">
+                            <span class="definition-term">CDSL:</span> Central Depository Services Limited - One of the two depositories in India (along with NSDL) that maintains electronic records of securities.
+                        </div>
+                        
+                        <div class="content-list-item">
+                            <span class="definition-term">CNC:</span> Cash and Carry - A product code used in trading platforms for delivery-based equity transactions where you buy shares for long-term holding.
+                        </div>
+                        
+                        <div class="content-list-item">
+                            <span class="definition-term">Demat Account:</span> Dematerialized account that holds shares and securities in electronic format. Essential for trading in Indian stock markets.
+                        </div>
+                        
+                        <div class="content-list-item">
+                            <span class="definition-term">DII:</span> Domestic Institutional Investors - Indian institutions like mutual funds, insurance companies, and pension funds that invest in stock markets.
+                        </div>
+                        
+                        <div class="content-list-item">
+                            <span class="definition-term">ELSS:</span> Equity Linked Savings Scheme - Mutual funds with 3-year lock-in period that offer tax deduction up to ₹1.5 lakh under Section 80C.
+                        </div>
+                        
+                        <div class="content-list-item">
+                            <span class="definition-term">FII:</span> Foreign Institutional Investors - International institutions that invest in Indian markets. Now called Foreign Portfolio Investors (FPI).
+                        </div>
+                        
+                        <div class="content-list-item">
+                            <span class="definition-term">FMCG:</span> Fast Moving Consumer Goods - Sector including companies like Hindustan Unilever, ITC, and Nestle that manufacture daily use products.
+                        </div>
+                        
+                        <div class="content-list-item">
+                            <span class="definition-term">F&O:</span> Futures and Options - Derivative instruments traded on NSE and BSE for hedging and speculation purposes.
+                        </div>
+                        
+                        <div class="content-list-item">
+                            <span class="definition-term">LTCG:</span> Long Term Capital Gains - Tax on profits from selling equity investments held for more than one year. Currently 10% on gains above ₹1 lakh annually.
+                        </div>
+                        
+                        <div class="content-list-item">
+                            <span class="definition-term">MCX:</span> Multi Commodity Exchange - India's largest commodity derivatives exchange where gold, silver, crude oil, and agricultural products are traded.
+                        </div>
+                        
+                        <div class="content-list-item">
+                            <span class="definition-term">MIS:</span> Margin Intraday Square-off - A product code for intraday trading where positions must be closed on the same day.
+                        </div>
+                        
+                        <div class="content-list-item">
+                            <span class="definition-term">NAV:</span> Net Asset Value - The per-unit value of a mutual fund scheme calculated by dividing total assets minus liabilities by number of units.
+                        </div>
+                        
+                        <div class="content-list-item">
+                            <span class="definition-term">Nifty 50:</span> The benchmark index of National Stock Exchange comprising 50 large-cap stocks across 13 sectors, representing about 65% of market capitalization.
+                        </div>
+                        
+                        <div class="content-list-item">
+                            <span class="definition-term">NPA:</span> Non-Performing Assets - Loans or advances that have stopped generating income for banks. Key metric for evaluating bank performance.
+                        </div>
+                        
+                        <div class="content-list-item">
+                            <span class="definition-term">NSDL:</span> National Securities Depository Limited - India's first and largest depository that maintains electronic records of securities.
+                        </div>
+                        
+                        <div class="content-list-item">
+                            <span class="definition-term">PMS:</span> Portfolio Management Services - Customized investment solutions offered by licensed portfolio managers for high net worth individuals.
+                        </div>
+                        
+                        <div class="content-list-item">
+                            <span class="definition-term">PPF:</span> Public Provident Fund - 15-year tax-saving investment scheme offering tax-free returns, currently at 7.1% annual interest.
+                        </div>
+                        
+                        <div class="content-list-item">
+                            <span class="definition-term">REIT:</span> Real Estate Investment Trust - Investment vehicle that owns and operates income-producing real estate. Embassy Office Parks and Mindspace are examples in India.
+                        </div>
+                        
+                        <div class="content-list-item">
+                            <span class="definition-term">SEBI:</span> Securities and Exchange Board of India - The regulatory body for Indian securities markets, established in 1992 to protect investor interests.
+                        </div>
+                        
+                        <div class="content-list-item">
+                            <span class="definition-term">SIP:</span> Systematic Investment Plan - A method of investing fixed amounts regularly in mutual funds, typically monthly, to benefit from rupee cost averaging.
+                        </div>
+                        
+                        <div class="content-list-item">
+                            <span class="definition-term">STCG:</span> Short Term Capital Gains - Tax on profits from selling equity investments held for less than one year. Currently 15% for equity investments.
+                        </div>
+                        
+                        <div class="content-list-item">
+                            <span class="definition-term">STP:</span> Systematic Transfer Plan - A facility to transfer fixed amounts from one mutual fund scheme to another at regular intervals.
+                        </div>
+                        
+                        <div class="content-list-item">
+                            <span class="definition-term">SWP:</span> Systematic Withdrawal Plan - A facility to withdraw fixed amounts from mutual fund investments at regular intervals for income generation.
+                        </div>
+                        
+                        <div class="content-list-item">
+                            <span class="definition-term">T+1 Settlement:</span> Trade plus one day settlement cycle implemented in Indian markets from 2023, meaning trades are settled one day after execution.
+                        </div>
+                        
+                        <div class="content-list-item">
+                            <span class="definition-term">TER:</span> Total Expense Ratio - The annual fee charged by mutual funds, expressed as a percentage of assets. SEBI has capped it at 2.25% for equity funds.
+                        </div>
+                        
+                        <div class="content-list-item">
+                            <span class="definition-term">UPI:</span> Unified Payments Interface - Digital payment system that has revolutionized financial transactions in India, enabling instant money transfers.
+                        </div>
+                        
+                        <div class="content-list-item">
+                            <span class="definition-term">VaR:</span> Value at Risk - A statistical measure used to assess the level of financial risk within a portfolio over a specific time frame.
+                        </div>
+                        
+                        <div class="content-list-item">
+                            <span class="definition-term">XIRR:</span> Extended Internal Rate of Return - A method to calculate returns for investments with irregular cash flows, commonly used for SIP return calculations.
+                        </div>
+                    </div>
+                    
+                    <p class="content-paragraph"><span class="highlight-text">Reference:</span> <a href="https://www.sebi.gov.in/sebiweb/other/OtherAction.do?doRecognised=yes&intmId=13" target="_blank" class="reference-link">SEBI - Investor Education</a></p>
+                `,
+      },
+      {
+        title: "Frequently Asked Questions (FAQs)",
+        content: `
+                    <h2 class="section-heading">XI. Frequently Asked Questions (FAQs)</h2>
+                    
+                    <p class="content-paragraph">Here are some frequently asked questions about the Indian stock market and investing, with practical answers and real-life examples:</p>
+                    
+                    <div class="content-list">
+                        <div class="content-list-item">
+                            <span class="definition-term">What is the minimum amount needed to start investing in Indian stock markets?</span> 
+                            You can start with as little as ₹500-1,000. For example, you can buy one share of ITC at around ₹400 or start a SIP in mutual funds with ₹500 monthly. Many brokers like Groww and Zerodha don't have minimum balance requirements.
+                        </div>
+                        
+                        <div class="content-list-item">
+                            <span class="definition-term">How do I choose between BSE and NSE for trading?</span> 
+                            Both exchanges offer similar stocks, but NSE has higher liquidity and better technology. Most retail investors use NSE as it's the preferred exchange for most brokers. You don't need to choose - your broker will route orders to the best exchange automatically.
+                        </div>
+                        
+                        <div class="content-list-item">
+                            <span class="definition-term">What's the difference between delivery and intraday trading?</span> 
+                            Delivery trading means buying shares to hold for days/months/years (like buying TCS for long-term). Intraday means buying and selling on the same day. Delivery has no time limit but requires full payment, while intraday offers leverage but positions must be closed by 3:20 PM.
+                        </div>
+                        
+                        <div class="content-list-item">
+                            <span class="definition-term">Should I invest in individual stocks or mutual funds?</span> 
+                            For beginners, mutual funds are better as they offer instant diversification. For example, investing ₹10,000 in HDFC Top 100 Fund gives exposure to 100+ stocks. Once you gain experience and have larger capital (₹5+ lakhs), you can consider individual stocks.
+                        </div>
+                        
+                        <div class="content-list-item">
+                            <span class="definition-term">How much tax do I need to pay on stock market gains?</span> 
+                            Short-term gains (< 1 year): 15% tax. Long-term gains (> 1 year): 10% tax on gains above ₹1 lakh annually. For example, if you make ₹2 lakh long-term gains, tax is 10% on ₹1 lakh = ₹10,000. Dividends are taxed as per your income slab.
+                        </div>
+                        
+                        <div class="content-list-item">
+                            <span class="definition-term">What happens if my broker shuts down?</span> 
+                            Your shares are safe as they're held in your demat account with NSDL/CDSL, not with the broker. You can transfer your holdings to another broker. Additionally, exchanges have Investor Protection Funds to compensate for broker defaults up to certain limits.
+                        </div>
+                        
+                        <div class="content-list-item">
+                            <span class="definition-term">How do I track my portfolio performance?</span> 
+                            Use apps like MoneyControl, ET Money, or your broker's app. Track absolute returns, XIRR for SIPs, and compare with benchmarks like Nifty 50. For example, if your portfolio gives 12% annual returns vs Nifty's 10%, you're outperforming by 2%.
+                        </div>
+                        
+                        <div class="content-list-item">
+                            <span class="definition-term">When should I sell my stocks?</span> 
+                            Sell when: 1) You need money for goals, 2) Company fundamentals deteriorate permanently, 3) Better opportunities arise, 4) Stock becomes overvalued. Don't sell due to temporary market volatility. For example, selling Asian Paints during COVID crash would have been a mistake.
+                        </div>
+                        
+                        <div class="content-list-item">
+                            <span class="definition-term">Is it safe to invest during market crashes?</span> 
+                            Market crashes often present the best buying opportunities. During March 2020 COVID crash, quality stocks like HDFC Bank, TCS, and Asian Paints were available at significant discounts. Those who invested during the crash saw excellent returns in subsequent years.
+                        </div>
+                        
+                        <div class="content-list-item">
+                            <span class="definition-term">How do I research stocks before investing?</span> 
+                            Use free resources like: 1) Company annual reports, 2) Screener.in for financial data, 3) MoneyControl for news, 4) Broker research reports. Check P/E ratio, debt levels, profit growth, and management quality. For example, before buying Infosys, check its revenue growth, client additions, and margin trends.
+                        </div>
+                        
+                        <div class="content-list-item">
+                            <span class="definition-term">What's the best time to invest in the stock market?</span> 
+                            The best time is "now" if you're investing for the long term. Market timing is difficult even for experts. Instead, use SIP to invest regularly. For example, starting a ₹10,000 monthly SIP today is better than waiting for the "right" time to invest ₹1.2 lakh lump sum.
+                        </div>
+                        
+                        <div class="content-list-item">
+                            <span class="definition-term">How do dividends work in India?</span> 
+                            Companies distribute profits as dividends to shareholders. For example, if you own 100 shares of ITC and it declares ₹10 dividend per share, you receive ₹1,000. Dividends are taxed as per your income slab. Ex-dividend date is when stock price adjusts for dividend payout.
+                        </div>
+                        
+                        <div class="content-list-item">
+                            <span class="definition-term">Can I invest in US stocks from India?</span> 
+                            Yes, through: 1) International mutual funds (like Motilal Oswal Nasdaq 100 Fund), 2) Direct investment via platforms like Vested or INDmoney (requires LRS limit of $250,000 annually), 3) ETFs tracking international indices available on Indian exchanges.
+                        </div>
+                        
+                        <div class="content-list-item">
+                            <span class="definition-term">What's the difference between growth and dividend options in mutual funds?</span> 
+                            Growth option reinvests profits to compound returns, while dividend option pays out profits. For long-term wealth creation, choose growth. For example, ₹10,000 invested in HDFC Top 100 Growth vs Dividend option over 10 years would show significantly higher corpus in growth option.
+                        </div>
+                        
+                        <div class="content-list-item">
+                            <span class="definition-term">How do I handle market volatility emotionally?</span> 
+                            1) Invest only surplus money, 2) Diversify across sectors, 3) Focus on long-term goals, 4) Don't check portfolio daily, 5) Remember that volatility is normal. During 2008 crisis, Sensex fell 60% but recovered to new highs within 3 years. Patience is key to successful investing.
+                        </div>
+                    </div>
+                    
+                    <p class="content-paragraph"><span class="highlight-text">Reference:</span> <a href="https://www.nseindia.com/education/content/what-is-stock-market" target="_blank" class="reference-link">NSE - Investor Education</a></p>
+                `,
+      },
+    ]
+  }
+
+  init() {
+    this.bindEvents()
+    this.loadPage(0)
+    this.updateUI()
+    this.updateSidebar()
+  }
+
+  updateSidebar() {
+    const sidebarNav = document.querySelector(".navigation-list")
+    sidebarNav.innerHTML = `
+            <li class="navigation-item">
+                <a href="#" class="navigation-link active-link" data-page="0">
+                    <span class="link-number">I.</span>
+                    <span class="link-text">Introduction to Stock Market</span>
+                </a>
+            </li>
+            <li class="navigation-item">
+                <a href="#" class="navigation-link" data-page="1">
+                    <span class="link-number">II.</span>
+                    <span class="link-text">Indian Stock Market Overview</span>
+                </a>
+            </li>
+            <li class="navigation-item">
+                <a href="#" class="navigation-link" data-page="2">
+                    <span class="link-number">III.</span>
+                    <span class="link-text">Key Participants</span>
+                </a>
+            </li>
+            <li class="navigation-item">
+                <a href="#" class="navigation-link" data-page="3">
+                    <span class="link-number">IV.</span>
+                    <span class="link-text">Types of Investments</span>
+                </a>
+            </li>
+            <li class="navigation-item">
+                <a href="#" class="navigation-link" data-page="4">
+                    <span class="link-number">V.</span>
+                    <span class="link-text">Data & Analysis</span>
+                </a>
+            </li>
+            <li class="navigation-item">
+                <a href="#" class="navigation-link" data-page="5">
+                    <span class="link-number">VI.</span>
+                    <span class="link-text">Risk Management</span>
+                </a>
+            </li>
+            <li class="navigation-item">
+                <a href="#" class="navigation-link" data-page="6">
+                    <span class="link-number">VII.</span>
+                    <span class="link-text">Indian Regulations & SEBI</span>
+                </a>
+            </li>
+            <li class="navigation-item">
+                <a href="#" class="navigation-link" data-page="7">
+                    <span class="link-number">VIII.</span>
+                    <span class="link-text">Success Stories</span>
+                </a>
+            </li>
+            <li class="navigation-item">
+                <a href="#" class="navigation-link" data-page="8">
+                    <span class="link-number">IX.</span>
+                    <span class="link-text">Practical Investment Guide</span>
+                </a>
+            </li>
+            <li class="navigation-item">
+                <a href="#" class="navigation-link" data-page="9">
+                    <span class="link-number">X.</span>
+                    <span class="link-text">Glossary</span>
+                </a>
+            </li>
+            <li class="navigation-item">
+                <a href="#" class="navigation-link" data-page="10">
+                    <span class="link-number">XI.</span>
+                    <span class="link-text">FAQs</span>
+                </a>
+            </li>
+        `
+
+    // Update page numbers
+    const pageNumbers = document.querySelector(".page-numbers")
+    pageNumbers.innerHTML = ""
+    for (let i = 0; i < this.totalPages; i++) {
+      const button = document.createElement("button")
+      button.className = `page-number ${i === 0 ? "active-page-number" : ""}`
+      button.dataset.page = i
+      button.textContent = i + 1
+      pageNumbers.appendChild(button)
+    }
+
+    // Update total pages display
+    document.getElementById("totalPages").textContent = this.totalPages
+
+    // Re-bind events for new elements
+    this.bindNavigationEvents()
+  }
+
+  bindNavigationEvents() {
+    // Sidebar navigation links
+    document.querySelectorAll(".navigation-link").forEach((link) => {
+      link.addEventListener("click", (e) => {
+        e.preventDefault()
+        const pageIndex = Number.parseInt(link.dataset.page)
+        this.goToPage(pageIndex)
+      })
+    })
+
+    // Page number buttons
+    document.querySelectorAll(".page-number").forEach((button) => {
+      button.addEventListener("click", () => {
+        const pageIndex = Number.parseInt(button.dataset.page)
+        this.goToPage(pageIndex)
+      })
+    })
+  }
+
+  bindEvents() {
+    // Navigation buttons
+    document.getElementById("prevBtn").addEventListener("click", () => this.previousPage())
+    document.getElementById("nextBtn").addEventListener("click", () => this.nextPage())
+
+    // Sidebar toggle
+    document.getElementById("sidebarToggle").addEventListener("click", () => this.toggleSidebar())
+
+    // Keyboard navigation
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowLeft") {
+        this.previousPage()
+      } else if (e.key === "ArrowRight") {
+        this.nextPage()
+      }
+    })
+
+    // Close sidebar on mobile when clicking outside
+    document.addEventListener("click", (e) => {
+      const sidebar = document.getElementById("sidebar")
+      const sidebarToggle = document.getElementById("sidebarToggle")
+
+      if (
+        window.innerWidth <= 1024 &&
+        !sidebar.contains(e.target) &&
+        !sidebarToggle.contains(e.target) &&
+        sidebar.classList.contains("sidebar-open")
+      ) {
+        this.closeSidebar()
+      }
+    })
+
+    // Handle window resize
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 1024) {
+        this.closeSidebar()
+      }
+    })
+  }
+
+  loadPage(pageIndex) {
+    if (pageIndex < 0 || pageIndex >= this.totalPages) return
+
+    const pageContent = document.getElementById("pageContent")
+    const page = this.pages[pageIndex]
+
+    // Add fade out effect
+    pageContent.style.opacity = "0"
+
+    setTimeout(() => {
+      pageContent.innerHTML = page.content
+      pageContent.style.opacity = "1"
+      pageContent.classList.add("fade-in")
+
+      // Scroll to top of content
+      pageContent.scrollTop = 0
+      window.scrollTo(0, 0)
+
+      // Remove animation class after animation completes
+      setTimeout(() => {
+        pageContent.classList.remove("fade-in")
+      }, 500)
+    }, 150)
+
+    this.currentPage = pageIndex
+    this.updateUI()
+  }
+
+  updateUI() {
+    // Update current page indicator
+    document.getElementById("currentPage").textContent = this.currentPage + 1
+
+    // Update navigation buttons
+    const prevBtn = document.getElementById("prevBtn")
+    const nextBtn = document.getElementById("nextBtn")
+
+    prevBtn.disabled = this.currentPage === 0
+    nextBtn.disabled = this.currentPage === this.totalPages - 1
+
+    // Update page numbers
+    document.querySelectorAll(".page-number").forEach((button, index) => {
+      button.classList.toggle("active-page-number", index === this.currentPage)
+    })
+
+    // Update sidebar navigation
+    document.querySelectorAll(".navigation-link").forEach((link, index) => {
+      link.classList.toggle("active-link", index === this.currentPage)
+    })
+  }
+
+  goToPage(pageIndex) {
+    if (pageIndex >= 0 && pageIndex < this.totalPages) {
+      this.loadPage(pageIndex)
+
+      // Close sidebar on mobile after navigation
+      if (window.innerWidth <= 1024) {
+        this.closeSidebar()
+      }
+    }
+  }
+
+  nextPage() {
+    if (this.currentPage < this.totalPages - 1) {
+      this.goToPage(this.currentPage + 1)
+    }
+  }
+
+  previousPage() {
+    if (this.currentPage > 0) {
+      this.goToPage(this.currentPage - 1)
+    }
+  }
+
+  toggleSidebar() {
+    const sidebar = document.getElementById("sidebar")
+    sidebar.classList.toggle("sidebar-open")
+  }
+
+  closeSidebar() {
+    const sidebar = document.getElementById("sidebar")
+    sidebar.classList.remove("sidebar-open")
+  }
+}
+
+// Initialize the study guide when the DOM is loaded
+document.addEventListener("DOMContentLoaded", () => {
+  new StudyGuide()
+})
+
+// Add smooth scrolling for better UX
+document.documentElement.style.scrollBehavior = "smooth"
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/header-footer-loader.js"></script>
+    <script src="../../assets/js/main.js"></script>
+</body>
+</html>

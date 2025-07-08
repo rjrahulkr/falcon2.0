@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaint Board - Falcon Futures</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="../assets/image/logo.png">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/loader.css">
+    <link rel="canonical" href="https://falconfutures.in/your-page-path" />
+</head>
+
+<body>
+    <!-- Header will be loaded here -->
+    <div id="header"></div>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <h1 class="text-center mb-5">Complaint Board</h1>
+
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">File a Complaint</h3>
+                        <p class="card-text">We take all complaints seriously and are committed to resolving them
+                            promptly. Please fill out the form below to submit your complaint.</p>
+
+                        <form id="complaintForm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="account" class="form-label">Account Number (if applicable)</label>
+                                <input type="text" class="form-control" id="account">
+                            </div>
+                            <div class="mb-3">
+                                <label for="complaintType" class="form-label">Complaint Type</label>
+                                <select class="form-select" id="complaintType" required>
+                                    <option value="">Select complaint type</option>
+                                    <option value="service">Service Related</option>
+                                    <option value="billing">Billing/Payment</option>
+                                    <option value="technical">Technical Issue</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="description" class="form-label">Complaint Description</label>
+                                <textarea class="form-control" id="description" rows="5" required></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="attachment" class="form-label">Attachment (if any)</label>
+                                <input type="file" class="form-control" id="attachment">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="acknowledge" required>
+                                <label class="form-check-label" for="acknowledge">I acknowledge that I have read and
+                                    understood the complaint process</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit Complaint</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Complaint Process</h3>
+                        <ol>
+                            <li class="mb-2">Complaint received and acknowledged within 24 hours</li>
+                            <li class="mb-2">Preliminary response within 3 working days</li>
+                            <li class="mb-2">Resolution or update within 7 working days</li>
+                            <li class="mb-2">Final resolution within 15 working days</li>
+                        </ol>
+                        <p>For urgent matters, please call our grievance officer at +91 9876543210</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer will be loaded here -->
+    <div id="footer"></div>
+
+    <!-- jQuery, Bootstrap JS, and Custom JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/header-footer-loader.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#complaintForm').submit(function (e) {
+                e.preventDefault();
+                alert('Thank you for your complaint. We have received your submission and will respond shortly.');
+                this.reset();
+            });
+        });
+    </script>
+</body>
+
+</html>

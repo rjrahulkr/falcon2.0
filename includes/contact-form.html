@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Testimonial Carousel</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Swiper JS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
+        
+        .testimonial-section {
+            font-family: "Nunito", sans-serif;
+            background-color: #f2f3fc;
+            padding: 80px 0;
+        }
+        
+        .testimonial-title {
+            text-align: center;
+            margin-bottom: 50px;
+            color: #4361ee;
+            font-weight: 700;
+        }
+        
+        .swiper-container {
+            width: 100%;
+            padding-bottom: 60px;
+        }
+        
+        .swiper-slide {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 10px 40px rgba(26, 26, 26, 0.1);
+            overflow: hidden;
+            transition: transform 0.4s ease;
+            height: auto;
+        }
+        
+        .ImgHolder {
+            background: #4361ee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+        }
+        
+        .ImgHolder img {
+            width: 100%;
+            max-width: 150px;
+            height: auto;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            outline: 3px solid #4361ee;
+            object-fit: cover;
+        }
+        
+        .ContentHolder {
+            padding: 20px;
+            position: relative;
+            text-align: center;
+            height: calc(100% - 180px);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .ContentHolder::before {
+            content: "";
+            width: 50px;
+            height: 50px;
+            background-color: #4361ee;
+            position: absolute;
+            top: -25px;
+            right: 20px;
+            border-radius: 50%;
+            opacity: 0.15;
+        }
+        
+        .ContentHolder h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 0.3rem;
+        }
+        
+        .stars {
+            color: #facc15;
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+        
+        .ContentHolder p {
+            font-size: 0.95rem;
+            font-weight: 400;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 0;
+            flex-grow: 1;
+        }
+        
+        .swiper-pagination-bullet {
+            background-color: #fff;
+            border: 2px solid #4361ee;
+            opacity: 0.7;
+            width: 12px;
+            height: 12px;
+        }
+        
+        .swiper-pagination-bullet-active {
+            background-color: #4361ee;
+            opacity: 1;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 1199.98px) {
+            .ContentHolder h3 {
+                font-size: 1.1rem;
+            }
+            
+            .ContentHolder p {
+                font-size: 0.9rem;
+            }
+        }
+        
+        @media (max-width: 991.98px) {
+            .testimonial-section {
+                padding: 60px 0;
+            }
+            
+            .ImgHolder img {
+                max-width: 120px;
+            }
+        }
+        
+        @media (max-width: 767.98px) {
+            .testimonial-section {
+                padding: 50px 0;
+            }
+            
+            .testimonial-title {
+                margin-bottom: 30px;
+                font-size: 1.8rem;
+            }
+            
+            .ImgHolder img {
+                max-width: 100px;
+            }
+            
+            .ContentHolder {
+                padding: 15px;
+            }
+            
+            .ContentHolder h3 {
+                font-size: 1rem;
+            }
+            
+            .ContentHolder p {
+                font-size: 0.85rem;
+            }
+            
+            .stars {
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 575.98px) {
+            .testimonial-section {
+                padding: 40px 0;
+            }
+            
+            .testimonial-title {
+                font-size: 1.5rem;
+            }
+            
+            .ImgHolder img {
+                max-width: 80px;
+                border-width: 3px;
+                outline-width: 2px;
+            }
+            
+            .ContentHolder::before {
+                width: 40px;
+                height: 40px;
+                top: -20px;
+            }
+            
+            .ContentHolder h3 {
+                font-size: 0.95rem;
+            }
+            
+            .ContentHolder p {
+                font-size: 0.8rem;
+                line-height: 1.5;
+            }
+            
+            .stars {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="testimonial-section">
+        <div class="container">
+            <h2 class="testimonial-title">What Our Clients Say</h2>
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <!-- Slider main container -->
+                    <div class="swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper" id="slideHolder">
+                            <!-- Slides will be added dynamically by JavaScript -->
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const testimonials = [
+                {
+                    avatar: "https://img.freepik.com/free-photo/woman-with-long-hair-yellow-hoodie-with-word-music-it_1340-39068.jpg",
+                    name: "Pooja Sharma",
+                    review: "Falcon Futures has completely changed the way I invest in the stock market. Their expert advice and timely support helped me gain consistent profits with minimal risk. As a beginner, I now feel confident and financially aware. Highly recommend them to anyone serious about wealth growth.",
+                    stars: 5
+                },
+                {
+                    avatar: "https://img.freepik.com/free-photo/close-up-portrait-young-bearded-man-white-shirt-jacket-posing-camera-with-broad-smile-isolated-gray_171337-629.jpg",
+                    name: "Ravi Verma",
+                    review: "I started with zero knowledge of trading. Falcon Futures guided me step-by-step, offering practical tips and strategies. Their advisory team is knowledgeable and very responsive. Within months, I started seeing real improvements in my portfolio. Best decision ever for my financial journey.",
+                    stars: 4
+                },
+                {
+                    avatar: "https://img.freepik.com/free-photo/handsome-african-guy-with-stylish-haircut-taking-photo-digital-camera_171337-1345.jpg",
+                    name: "Anjali Mehta",
+                    review: "Thanks to Falcon Futures, I've learned how to manage risk and take smart trading decisions. Their research is accurate, and their strategies are easy to follow. My confidence in the stock market has grown massively. A trustworthy and professional team indeed.",
+                    stars: 5
+                },
+                {
+                    avatar: "https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg",
+                    name: "Sandeep Yadav",
+                    review: "Falcon Futures made stock trading simple for me. Their detailed analysis and personalized advice helped me avoid common mistakes. I've already seen great results, and their regular updates keep me informed and ready. Great experience for anyone looking to grow money smartly.",
+                    stars: 5
+                },
+                {
+                    avatar: "https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg",
+                    name: "Nikita Joshi",
+                    review: "I used to rely on random tips, but Falcon Futures gave me structure and strategy. Their team genuinely cares about client success. My investments are now more stable, and I'm seeing steady returns. I truly recommend them to working professionals like me.",
+                    stars: 5
+                },
+                {
+                    avatar: "https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg",
+                    name: "Rajeev Kapoor",
+                    review: "After joining Falcon Futures, I stopped gambling and started investing. Their insights are based on deep research, and the support team is always helpful. I feel more financially secure now and plan to invest long-term with their guidance. Excellent experience!",
+                    stars: 5
+                },
+                {
+                    avatar: "https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg",
+                    name: "Meera Nair",
+                    review: "Falcon Futures provided me with the knowledge and confidence I needed to start my investment journey. Their advisory calls are crisp, to-the-point, and result-driven. I no longer fear market dips, thanks to their expert guidance. Highly reliable and genuine service.",
+                    stars: 5
+                }
+            ];
+
+            const slideHolder = document.getElementById("slideHolder");
+            
+            // Generate slides
+            testimonials.forEach(({ avatar, name, review, stars }) => {
+                const starIcons = '<div class="stars">' + '★'.repeat(stars) + '☆'.repeat(5 - stars) + '</div>';
+                slideHolder.innerHTML += `
+                    <div class="swiper-slide">
+                        <div class="ImgHolder">
+                            <img src="${avatar}" alt="${name}" class="img-fluid" loading="lazy" />
+                        </div>
+                        <div class="ContentHolder">
+                            <h3>${name}</h3>
+                            ${starIcons}
+                            <p>"${review}"</p>
+                        </div>
+                    </div>`;
+            });
+
+            // Initialize Swiper
+            const swiper = new Swiper('.swiper-container', {
+                grabCursor: true,
+                centeredSlides: true,
+                loop: true,
+                autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: false,
+                },
+                effect: "coverflow",
+                coverflowEffect: {
+                    rotate: 0,
+                    depth: 500,
+                    slideShadows: true,
+                    stretch: 0,
+                    modifier: 1,
+                },
+                slidesPerView: 1,
+                spaceBetween: 20,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                    dynamicBullets: true
+                },
+                breakpoints: {
+                    576: {
+                        slidesPerView: 1.2,
+                        spaceBetween: 20
+                    },
+                    768: {
+                        slidesPerView: 1.5,
+                        spaceBetween: 25
+                    },
+                    992: {
+                        slidesPerView: 2,
+                        spaceBetween: 30
+                    },
+                    1200: {
+                        slidesPerView: 2.3,
+                        spaceBetween: 30
+                    }
+                }
+            });
+            
+            // Add keyboard navigation
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'ArrowLeft') {
+                    swiper.slidePrev();
+                } else if (e.key === 'ArrowRight') {
+                    swiper.slideNext();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

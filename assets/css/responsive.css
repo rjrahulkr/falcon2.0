@@ -1,0 +1,204 @@
+
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .navbar-collapse {
+        padding-top: 15px;
+    }
+    
+    .navbar-nav {
+        margin-bottom: 15px;
+    }
+    
+    .d-flex {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    
+    .card {
+        margin-bottom: 20px;
+    }
+    
+    footer .col-md-3 {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .display-4 {
+        font-size: 2rem;
+    }
+    
+    .lead {
+        font-size: 1rem;
+    }
+    
+    .welcome-section {
+        padding: 2rem 0;
+    }
+}
+
+/* Falcon Futures Responsive CSS */
+
+@media (max-width: 1199.98px) {
+  .falcon-hero-title {
+    font-size: 3rem;
+  }
+
+  .falcon-section-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .falcon-hero-title {
+    font-size: 2.5rem;
+  }
+
+  .falcon-section-title {
+    font-size: 2rem;
+  }
+
+  .falcon-ticker-content {
+    gap: 20px;
+  }
+
+  .falcon-ticker-item {
+    font-size: 0.8rem;
+  }
+
+  .falcon-about-section,
+  .falcon-choose-section,
+  .falcon-services-section
+   {
+    padding: 60px 0;
+  }
+
+  .falcon-service-card {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .falcon-hero-section {
+    text-align: center;
+    padding-top: 100px;
+  }
+.disclaimer-text {
+   font-size: 10px;
+    padding: 0 15px;
+}
+  .falcon-hero-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .falcon-hero-description {
+    font-size: 1rem;
+  }
+
+  .falcon-section-title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .falcon-ticker-content {
+    gap: 10px;
+  }
+
+  .falcon-ticker-item {
+    justify-content: center;
+  }
+
+  .falcon-about-section,
+  .falcon-choose-section,
+  .falcon-services-section {
+    padding: 50px 0;
+  }
+
+  .falcon-about-content,
+  .falcon-choose-content {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .falcon-choose-image {
+    text-align: center;
+  }
+
+  .falcon-play-button {
+    width: 60px;
+    height: 60px;
+    font-size: 1.2rem;
+  }
+
+  .falcon-service-card {
+    text-align: center;
+  }
+
+ 
+
+  .falcon-footer .row > div {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .falcon-social-links {
+    justify-content: center;
+  }
+  .disclaimer-text {
+   font-size: 8px;
+    padding: 0 15px;
+}
+}
+
+@media (max-width: 575.98px) {
+  .falcon-hero-title {
+    font-size: 1.8rem;
+  }
+.disclaimer-text {
+   font-size: 8px; 
+    padding: 0 2px;
+}
+  .falcon-section-title {
+    font-size: 1.6rem;
+  }
+
+  .falcon-hero-btn {
+    padding: 10px 25px;
+    font-size: 0.9rem;
+  }
+
+  .falcon-hero-section {
+    margin-top: 40px !important;
+  }
+  .falcon-disclaimer-title {
+    font-size: 1.6rem;
+  }
+
+  .falcon-disclaimer-content p {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .copyright-text {
+    font-size: 12px;
+  }
+  .footer-link {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 576px) {
+  .copyright-text {
+    font-size: 16px;
+  }
+  .footer-link {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intraday Trading Tips - Falcon Futures</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="../../assets/image/logo.png">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../assets/css/main.css">    
+    <link rel="stylesheet" href="../../assets/css/responsive.css">
+    <link rel="stylesheet" href="../../assets/css/loader.css">
+    <link rel="canonical" href="https://falconfutures.in/your-page-path" />
+</head>
+<body>
+    <!-- Header will be loaded here -->
+    <div id="header"></div>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+       <div class="study-container">
+        <!-- Sidebar -->
+        <div class="study-sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h4 class="sidebar-title">Intraday Trading Guide</h4>
+                <button class="sidebar-toggle" id="sidebarToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <nav class="sidebar-navigation">
+                <ul class="navigation-list">
+                    <li class="navigation-item">
+                        <a href="#" class="navigation-link active-link" data-page="0">
+                            <span class="link-number">I.</span>
+                            <span class="link-text">Introduction to Intraday Trading</span>
+                        </a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="#" class="navigation-link" data-page="1">
+                            <span class="link-number">II.</span>
+                            <span class="link-text">Essential Prerequisites</span>
+                        </a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="#" class="navigation-link" data-page="2">
+                            <span class="link-number">III.</span>
+                            <span class="link-text">Momentum Trading</span>
+                        </a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="#" class="navigation-link" data-page="3">
+                            <span class="link-number">IV.</span>
+                            <span class="link-text">Reversal Trading</span>
+                        </a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="#" class="navigation-link" data-page="4">
+                            <span class="link-number">V.</span>
+                            <span class="link-text">Gap and Go Strategy</span>
+                        </a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="#" class="navigation-link" data-page="5">
+                            <span class="link-number">VI.</span>
+                            <span class="link-text">Scalping & Breakout Trading</span>
+                        </a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="#" class="navigation-link" data-page="6">
+                            <span class="link-number">VII.</span>
+                            <span class="link-text">Risk Management</span>
+                        </a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="#" class="navigation-link" data-page="7">
+                            <span class="link-number">VIII.</span>
+                            <span class="link-text">Position Sizing</span>
+                        </a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="#" class="navigation-link" data-page="8">
+                            <span class="link-number">IX.</span>
+                            <span class="link-text">Psychology & Discipline</span>
+                        </a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="#" class="navigation-link" data-page="9">
+                            <span class="link-number">X.</span>
+                            <span class="link-text">Emotional Control</span>
+                        </a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="#" class="navigation-link" data-page="10">
+                            <span class="link-number">XI.</span>
+                            <span class="link-text">Practical Tips</span>
+                        </a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="#" class="navigation-link" data-page="11">
+                            <span class="link-number">XII.</span>
+                            <span class="link-text">Conclusion</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <div class="study-main">
+            <div class="content-wrapper">
+                <!-- Page Content -->
+                <div class="page-content" id="pageContent">
+                    <!-- Content will be loaded here -->
+                </div>
+                <!-- Navigation Controls -->
+                <div class="page-controls">
+                    <div class="control-buttons">
+                        <button class="control-button previous-button" id="prevBtn">
+                            <i class="fas fa-chevron-left"></i>
+                            <span>Previous</span>
+                        </button>
+                        
+                        <div class="page-indicator">
+                            <span class="current-page" id="currentPage">1</span>
+                            <span class="page-separator">of</span>
+                            <span class="total-pages" id="totalPages">12</span>
+                        </div>
+                        
+                        <button class="control-button next-button" id="nextBtn">
+                            <span>Next</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="page-numbers">
+                        <button class="page-number active-page-number" data-page="0">1</button>
+                        <button class="page-number" data-page="1">2</button>
+                        <button class="page-number" data-page="2">3</button>
+                        <button class="page-number" data-page="3">4</button>
+                        <button class="page-number" data-page="4">5</button>
+                        <button class="page-number" data-page="5">6</button>
+                        <button class="page-number" data-page="6">7</button>
+                        <button class="page-number" data-page="7">8</button>
+                        <button class="page-number" data-page="8">9</button>
+                        <button class="page-number" data-page="9">10</button>
+                        <button class="page-number" data-page="10">11</button>
+                        <button class="page-number" data-page="11">12</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+
+    <!-- Footer will be loaded here -->
+    <div id="footer"></div>
+
+    <!-- jQuery, Bootstrap JS, and Custom JS -->
+    
+    <script>
+        // Intraday Trading Guide JavaScript
+class IntradayGuide {
+  constructor() {
+    this.currentPage = 0
+    this.totalPages = 12
+    this.pages = this.initializePages()
+    this.init()
+  }
+
+  initializePages() {
+    return [
+      {
+        title: "Introduction to Intraday Trading",
+        content: `
+                    <h1 class="main-heading">Intraday Trading Tips: A Comprehensive Guide</h1>
+                    <h2 class="section-heading">I. Introduction to Intraday Trading</h2>
+                    
+                    <h3 class="subsection-heading">A. What is Intraday Trading?</h3>
+                    <p class="content-paragraph">Intraday trading, often referred to as day trading, is a speculative trading strategy where financial instruments are bought and sold within the same trading day. The primary goal is to profit from short-term price movements without carrying positions overnight.</p>
+                    
+                    <h4 class="subsection-heading">1. Definition and Core Concept</h4>
+                    <p class="content-paragraph">The core concept revolves around capitalizing on small price fluctuations throughout the trading day. Traders open and close multiple positions within hours or minutes, aiming to accumulate small profits from each trade.</p>
+                    
+                    <div class="highlight-box">
+                        <h4 class="subsection-heading">Example</h4>
+                        <p class="content-paragraph">Buy 100 shares of Company X at ₹500 in the morning, sell at ₹505 by afternoon = ₹500 profit (excluding costs)</p>
+                    </div>
+                    
+                    <h4 class="subsection-heading">2. Key Characteristics</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Same-Day Trading:</span> All positions squared off before market closes</li>
+                        <li class="content-list-item"><span class="highlight-text">High Volatility:</span> Thrives on significant price swings</li>
+                        <li class="content-list-item"><span class="highlight-text">Leverage:</span> Higher leverage for larger positions with smaller capital</li>
+                        <li class="content-list-item"><span class="highlight-text">Technical Analysis Focus:</span> Charts and patterns over fundamentals</li>
+                        <li class="content-list-item"><span class="highlight-text">Fast-Paced:</span> High-pressure, rapid execution environment</li>
+                    </ul>
+                    
+                    <h3 class="subsection-heading">B. Why Intraday Trading Attracts Traders</h3>
+                    
+                    <h4 class="subsection-heading">1. Potential for Quick Profits</h4>
+                    <p class="content-paragraph">The most alluring aspect is the promise of quick returns. Unlike long-term investing, profits can materialize within hours or minutes.</p>
+                    
+                    <h4 class="subsection-heading">2. Leverage and Margin Trading</h4>
+                    <p class="content-paragraph">Brokers offer higher leverage for intraday trades. With 10x leverage, ₹10,000 can control a ₹1,00,000 position.</p>
+                    
+                    <h3 class="subsection-heading">C. The Risks Involved</h3>
+                    
+                    <h4 class="subsection-heading">1. High Volatility and Capital Loss</h4>
+                    <p class="content-paragraph">Sudden price reversals can lead to rapid losses. Without proper risk management, a single bad trade can wipe out significant capital.</p>
+                    
+                    <h4 class="subsection-heading">2. Psychological Challenges</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Fear:</span> Premature selling or holding losing trades</li>
+                        <li class="content-list-item"><span class="highlight-text">Greed:</span> Over-trading or refusing to book profits</li>
+                        <li class="content-list-item"><span class="highlight-text">Revenge Trading:</span> Impulsive trades to recover losses</li>
+                    </ul>
+                    
+                    <div class="highlight-box">
+                        <h4 class="subsection-heading">Important Note</h4>
+                        <p class="content-paragraph">Intraday trading is one of the riskiest forms of trading. Many novice traders underestimate these risks.</p>
+                    </div>
+                `
+      },
+      {
+        title: "Essential Prerequisites for Intraday Trading",
+        content: `
+                    <h2 class="section-heading">II. Essential Prerequisites for Intraday Trading</h2>
+                    
+                    <p class="content-paragraph">Before embarking on intraday trading, certain foundational elements must be in place to increase success chances and mitigate risks.</p>
+                    
+                    <h3 class="subsection-heading">A. Knowledge and Education</h3>
+                    
+                    <h4 class="subsection-heading">1. Understanding Market Dynamics and Technical Analysis</h4>
+                    <p class="content-paragraph">Successful intraday traders possess deep understanding of market behavior:</p>
+                    
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Market Structure:</span> Demand/supply, order flow, participant interactions</li>
+                        <li class="content-list-item"><span class="highlight-text">Chart Patterns:</span> Head & shoulders, triangles, flags</li>
+                        <li class="content-list-item"><span class="highlight-text">Candlestick Patterns:</span> Doji, hammer, engulfing patterns</li>
+                        <li class="content-list-item"><span class="highlight-text">Indicators:</span> MA, RSI, MACD, Bollinger Bands</li>
+                        <li class="content-list-item"><span class="highlight-text">Support/Resistance:</span> Key price levels</li>
+                    </ul>
+                    
+                    <div class="highlight-box">
+                        <h4 class="subsection-heading">Example Analysis</h4>
+                        <p class="content-paragraph">Using 5-minute charts, if a stock bounces off support and breaks above previous high with high volume, this could signal a bullish entry opportunity targeting next resistance.</p>
+                    </div>
+                    
+                    <h4 class="subsection-heading">2. Importance of Continuous Learning</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item">Reading trading books and articles</li>
+                        <li class="content-list-item">Attending webinars and workshops</li>
+                        <li class="content-list-item">Analyzing past trades (winners and losers)</li>
+                        <li class="content-list-item">Staying updated with market news</li>
+                    </ul>
+                    
+                    <h3 class="subsection-heading">B. Choosing the Right Brokerage and Platform</h3>
+                    
+                    <h4 class="subsection-heading">1. Low Brokerage Charges and Fast Execution</h4>
+                    <p class="content-paragraph">High-frequency trading makes brokerage costs critical. Look for competitive pricing and fast order execution - even seconds matter.</p>
+                    
+                    <h4 class="subsection-heading">2. Advanced Charting Tools and Real-time Data</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Multiple Chart Types:</span> Candlestick, bar, line charts</li>
+                        <li class="content-list-item"><span class="highlight-text">Various Timeframes:</span> 1-min, 5-min, 15-min charts</li>
+                        <li class="content-list-item"><span class="highlight-text">Technical Indicators:</span> Wide range of built-in indicators</li>
+                        <li class="content-list-item"><span class="highlight-text">Real-time Data:</span> Live streaming quotes and volume</li>
+                        <li class="content-list-item"><span class="highlight-text">Customizable Interface:</span> Watchlists, alerts, order windows</li>
+                    </ul>
+                    
+                    <h3 class="subsection-heading">C. Capital Allocation and Risk Capital</h3>
+                    
+                    <h4 class="subsection-heading">1. Only Trade with Risk Capital</h4>
+                    <p class="content-paragraph">Never use money you cannot afford to lose. This includes funds for essential expenses, emergency savings, or long-term goals.</p>
+                    
+                    <h4 class="subsection-heading">2. Avoiding Over-Leverage</h4>
+                    <div class="highlight-box">
+                        <h4 class="subsection-heading">Leverage Example</h4>
+                        <p class="content-paragraph">With ₹1,00,000 and 10x leverage, you can take ₹10,00,000 position. Just 1% adverse move = ₹10,000 loss (10% of capital).</p>
+                    </div>
+                    
+                    <p class="content-paragraph">Falcon Futures advises prudent leverage use, aligning with risk tolerance and trading strategy.</p>
+                `
+      },
+      {
+        title: "Momentum Trading Strategy",
+        content: `
+                    <h2 class="section-heading">III. Key Intraday Trading Strategies</h2>
+                    
+                    <h3 class="subsection-heading">A. Momentum Trading</h3>
+                    <p class="content-paragraph">Momentum trading involves identifying stocks moving strongly in one direction with high volume and riding that momentum for short periods.</p>
+                    
+                    <h4 class="subsection-heading">1. Identifying Stocks with High Volume and Price Movement</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Volume:</span> Look for unusually high trading volume vs. average</li>
+                        <li class="content-list-item"><span class="highlight-text">Price Movement:</span> Significant percentage gains/losses within the day</li>
+                        <li class="content-list-item"><span class="highlight-text">Breakouts:</span> Breaking out of previous ranges or levels</li>
+                    </ul>
+                    
+                    <h4 class="subsection-heading">2. Entry and Exit Points</h4>
+                    <div class="highlight-box">
+                        <h4 class="subsection-heading">Entry Strategy</h4>
+                        <ul class="content-list">
+                            <li class="content-list-item">Long position when stock breaks above resistance on high volume</li>
+                            <li class="content-list-item">Short position when breaks below support on high volume</li>
+                            <li class="content-list-item">Confirmation from RSI or MACD indicators</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="highlight-box">
+                        <h4 class="subsection-heading">Exit Strategy</h4>
+                        <ul class="content-list">
+                            <li class="content-list-item">Set predefined profit target and strict stop-loss</li>
+                            <li class="content-list-item">Exit when momentum slows or reversal signs appear</li>
+                            <li class="content-list-item">Watch for declining volume or reversal patterns</li>
+                        </ul>
+                    </div>
+                    
+                    <h4 class="subsection-heading">3. Example: Trading a Stock Breaking Out</h4>
+                    <div class="highlight-box">
+                        <h4 class="subsection-heading">Practical Example</h4>
+                        <p class="content-paragraph"><span class="highlight-text">Setup:</span> Company A trading in ₹100-₹105 range for hours</p>
+                        <p class="content-paragraph"><span class="highlight-text">Breakout:</span> Breaks above ₹105 with volume surge</p>
+                        <p class="content-paragraph"><span class="highlight-text">Entry:</span> Long at ₹105.50</p>
+                        <p class="content-paragraph"><span class="highlight-text">Stop-loss:</span> ₹104 (below breakout level)</p>
+                        <p class="content-paragraph"><span class="highlight-text">Target:</span> ₹108 (based on resistance/risk-reward)</p>
+                        <p class="content-paragraph"><span class="highlight-text">Outcome:</span> Book profit at ₹108 or cut loss at ₹104</p>
+                    </div>
+                    
+                    <h4 class="subsection-heading">Key Success Factors</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Volume Confirmation:</span> High volume validates the breakout</li>
+                        <li class="content-list-item"><span class="highlight-text">Quick Decision:</span> Enter promptly after confirmation</li>
+                        <li class="content-list-item"><span class="highlight-text">Risk Management:</span> Always have stop-loss in place</li>
+                        <li class="content-list-item"><span class="highlight-text">Profit Booking:</span> Don't get greedy, stick to targets</li>
+                    </ul>
+                    
+                    <h4 class="subsection-heading">Common Mistakes to Avoid</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item">Chasing stocks after significant moves</li>
+                        <li class="content-list-item">Ignoring volume confirmation</li>
+                        <li class="content-list-item">Not setting stop-losses</li>
+                        <li class="content-list-item">Holding positions too long</li>
+                    </ul>
+                `
+      },
+      {
+        title: "Reversal Trading Strategy",
+        content: `
+                    <h2 class="section-heading">B. Reversal Trading</h2>
+                    <p class="content-paragraph">Reversal trading involves identifying stocks in strong trends showing exhaustion signs and likely to reverse direction. This counter-trend strategy is riskier but offers high reward potential.</p>
+                    
+                    <h3 class="subsection-heading">1. Identifying Overbought/Oversold Conditions</h3>
+                    
+                    <div class="highlight-box">
+                        <h4 class="subsection-heading">Overbought Conditions</h4>
+                        <ul class="content-list">
+                            <li class="content-list-item">Price risen too quickly, due for correction</li>
+                            <li class="content-list-item">RSI above 70</li>
+                            <li class="content-list-item">Stochastic Oscillator above 80</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="highlight-box">
+                        <h4 class="subsection-heading">Oversold Conditions</h4>
+                        <ul class="content-list">
+                            <li class="content-list-item">Price fallen too quickly, due for bounce</li>
+                            <li class="content-list-item">RSI below 30</li>
+                            <li class="content-list-item">Stochastic Oscillator below 20</li>
+                        </ul>
+                    </div>
+                    
+                    <h3 class="subsection-heading">2. Using Key Indicators</h3>
+                    
+                    <h4 class="subsection-heading">RSI (Relative Strength Index)</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item">Momentum oscillator measuring speed/change of price movements</li>
+                        <li class="content-list-item">Above 70 = overbought conditions</li>
+                        <li class="content-list-item">Below 30 = oversold conditions</li>
+                    </ul>
+                    
+                    <h4 class="subsection-heading">Stochastic Oscillator</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item">Compares closing price to price range over period</li>
+                        <li class="content-list-item">Above 80 = overbought</li>
+                        <li class="content-list-item">Below 20 = oversold</li>
+                    </ul>
+                    
+                    <h3 class="subsection-heading">3. Example: Trading Stock Reversing from Resistance</h3>
+                    
+                    <div class="highlight-box">
+                        <h4 class="subsection-heading">Reversal Trading Example</h4>
+                        <p class="content-paragraph"><span class="highlight-text">Setup:</span> Company B in strong uptrend, RSI consistently above 70</p>
+                        <p class="content-paragraph"><span class="highlight-text">Signal:</span> Approaches ₹250 resistance with bearish candlestick pattern</p>
+                        <p class="content-paragraph"><span class="highlight-text">Confirmation:</span> Declining volume, shooting star pattern</p>
+                        <p class="content-paragraph"><span class="highlight-text">Entry:</span> Short at ₹249</p>
+                        <p class="content-paragraph"><span class="highlight-text">Stop-loss:</span> ₹251 (above resistance)</p>
+                        <p class="content-paragraph"><span class="highlight-text">Target:</span> ₹245 (previous support)</p>
+                    </div>
+                    
+                    <h4 class="subsection-heading">Key Reversal Signals</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Divergence:</span> Price makes new high but RSI doesn't</li>
+                        <li class="content-list-item"><span class="highlight-text">Candlestick Patterns:</span> Doji, shooting star, hammer</li>
+                        <li class="content-list-item"><span class="highlight-text">Volume:</span> Declining volume on trend continuation</li>
+                        <li class="content-list-item"><span class="highlight-text">Support/Resistance:</span> Strong levels holding multiple times</li>
+                    </ul>
+                    
+                    <h4 class="subsection-heading">Risk Management for Reversal Trading</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Tight Stop-losses:</span> Counter-trend trades need strict risk control</li>
+                        <li class="content-list-item"><span class="highlight-text">Multiple Confirmations:</span> Don't rely on single indicator</li>
+                        <li class="content-list-item"><span class="highlight-text">Position Sizing:</span> Smaller positions due to higher risk</li>
+                        <li class="content-list-item"><span class="highlight-text">Quick Exits:</span> If reversal doesn't materialize, exit fast</li>
+                    </ul>
+                `
+      },
+      {
+        title: "Gap and Go Strategy",
+        content: `
+                    <h2 class="section-heading">C. Gap and Go Strategy</h2>
+                    <p class="content-paragraph">The Gap and Go strategy focuses on stocks opening significantly higher or lower than previous day's closing price, creating price gaps often caused by overnight news or events.</p>
+                    
+                    <h3 class="subsection-heading">1. Trading Stocks with Significant Price Gaps</h3>
+                    
+                    <div class="highlight-box">
+                        <h4 class="subsection-heading">Types of Gaps</h4>
+                        <ul class="content-list">
+                            <li class="content-list-item"><span class="highlight-text">Gap Up:</span> Stock opens higher than previous day's high</li>
+                            <li class="content-list-item"><span class="highlight-text">Gap Down:</span> Stock opens lower than previous day's low</li>
+                        </ul>
+                    </div>
+                    
+                    <h3 class="subsection-heading">2. Analyzing the Reason for the Gap</h3>
+                    <p class="content-paragraph">Understanding gap causes is crucial for strategy success:</p>
+                    
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Fundamental Catalysts:</span> Earnings, new contracts, policy changes</li>
+                        <li class="content-list-item"><span class="highlight-text">Market Sentiment:</span> General market mood or sector rotation</li>
+                        <li class="content-list-item"><span class="highlight-text">News Events:</span> Company-specific or industry news</li>
+                        <li class="content-list-item"><span class="highlight-text">Global Factors:</span> International market movements</li>
+                    </ul>
+                    
+                    <p class="content-paragraph">Gaps caused by strong fundamental news are more likely to sustain their direction.</p>
+                    
+                    <h3 class="subsection-heading">3. Example: Trading Stock Gapping Up on Positive News</h3>
+                    
+                    <div class="highlight-box">
+                        <h4 class="subsection-heading">Gap and Go Example</h4>
+                        <p class="content-paragraph"><span class="highlight-text">Catalyst:</span> Company C announces better-than-expected quarterly results</p>
+                        <p class="content-paragraph"><span class="highlight-text">Previous Close:</span> ₹300</p>
+                        <p class="content-paragraph"><span class="highlight-text">Gap Opening:</span> ₹320</p>
+                        <p class="content-paragraph"><span class="highlight-text">Strategy:</span> Wait for first few minutes to confirm direction</p>
+                        <p class="content-paragraph"><span class="highlight-text">Entry:</span> Long at ₹322 (if holds above opening with volume)</p>
+                        <p class="content-paragraph"><span class="highlight-text">Stop-loss:</span> ₹318 (below opening price)</p>
+                        <p class="content-paragraph"><span class="highlight-text">Target:</span> Based on technical levels or risk-reward ratio</p>
+                    </div>
+                    
+                    <h4 class="subsection-heading">Gap Trading Rules</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Wait for Confirmation:</span> Don't trade immediately at open</li>
+                        <li class="content-list-item"><span class="highlight-text">Volume Analysis:</span> Strong volume supports gap direction</li>
+                        <li class="content-list-item"><span class="highlight-text">News Quality:</span> Assess fundamental strength of catalyst</li>
+                        <li class="content-list-item"><span class="highlight-text">Market Context:</span> Consider overall market sentiment</li>
+                    </ul>
+                    
+                    <h4 class="subsection-heading">Gap Fill Concept</h4>
+                    <p class="content-paragraph">Many gaps eventually get "filled" - price returns to pre-gap levels. Consider this possibility:</p>
+                    
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Weak Gaps:</span> Often fill within same day</li>
+                        <li class="content-list-item"><span class="highlight-text">Strong Gaps:</span> May sustain for days/weeks</li>
+                        <li class="content-list-item"><span class="highlight-text">Partial Fills:</span> Price retraces part of gap</li>
+                    </ul>
+                    
+                    <h4 class="subsection-heading">Risk Considerations</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item">High volatility in first hour of trading</li>
+                        <li class="content-list-item">False breakouts common</li>
+                        <li class="content-list-item">News may be already priced in</li>
+                        <li class="content-list-item">Institutional profit-taking can reverse gaps</li>
+                    </ul>
+                `
+      },
+      {
+        title: "Scalping and Breakout Trading",
+        content: `
+                    <h2 class="section-heading">D. Scalping</h2>
+                    <p class="content-paragraph">Scalping is an extremely short-term strategy aiming to profit from very small price movements. Scalpers execute numerous trades throughout the day, holding positions for seconds or minutes.</p>
+                    
+                    <h3 class="subsection-heading">1. Making Small Profits from Minor Price Changes</h3>
+                    <ul class="content-list">
+                        <li class="content-list-item">Focus on capturing bid-ask spread</li>
+                        <li class="content-list-item">Use Level 2 data for order flow analysis</li>
+                        <li class="content-list-item">Target small, consistent profits</li>
+                        <li class="content-list-item">High win rate strategy</li>
+                    </ul>
+                    
+                    <h3 class="subsection-heading">2. High Frequency Trading and Tight Stop-Losses</h3>
+                    <ul class="content-list">
+                        <li class="content-list-item">Large number of trades daily</li>
+                        <li class="content-list-item">Extremely tight stop-losses</li>
+                        <li class="content-list-item">Quick decision making required</li>
+                        <li class="content-list-item">Many small profits outweigh few small losses</li>
+                    </ul>
+                    
+                    <div class="highlight-box">
+                        <h4 class="subsection-heading">Scalping Example</h4>
+                        <p class="content-paragraph"><span class="highlight-text">Stock:</span> Reliance Industries (highly liquid)</p>
+                        <p class="content-paragraph"><span class="highlight-text">Buy:</span> ₹2,850.50</p>
+                        <p class="content-paragraph"><span class="highlight-text">Sell:</span> ₹2,851.00</p>
+                        <p class="content-paragraph"><span class="highlight-text">Profit:</span> ₹0.50 per share</p>
+                        <p class="content-paragraph"><span class="highlight-text">Frequency:</span> Multiple times within minutes</p>
+                        <p class="content-paragraph"><span class="highlight-text">Cumulative:</span> Hundreds of such trades = substantial profit</p>
+                    </div>
+                    
+                    <h2 class="section-heading">E. Breakout Trading</h2>
+                    <p class="content-paragraph">Breakout trading involves identifying key support and resistance levels and entering trades when price breaks through these levels with conviction.</p>
+                    
+                    <h3 class="subsection-heading">1. Identifying Key Support and Resistance Levels</h3>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Support:</span> Price level where stock finds buying interest and bounces</li>
+                        <li class="content-list-item"><span class="highlight-text">Resistance:</span> Price level where stock faces selling pressure and reverses</li>
+                        <li class="content-list-item">Identified from previous highs and lows on charts</li>
+                        <li class="content-list-item">Multiple touches make levels stronger</li>
+                    </ul>
+                    
+                    <h3 class="subsection-heading">2. Trading When Price Breaks These Levels</h3>
+                    <ul class="content-list">
+                        <li class="content-list-item">Breakout above resistance = potential uptrend</li>
+                        <li class="content-list-item">Breakdown below support = potential downtrend</li>
+                        <li class="content-list-item">High volume confirms breakout strength</li>
+                        <li class="content-list-item">False breakouts are common - need confirmation</li>
+                    </ul>
+                    
+                    <div class="highlight-box">
+                        <h4 class="subsection-heading">Breakout Trading Example</h4>
+                        <p class="content-paragraph"><span class="highlight-text">Setup:</span> Company D trading below ₹1,200 resistance for days</p>
+                        <p class="content-paragraph"><span class="highlight-text">Breakout:</span> Breaks above ₹1,200 with volume surge</p>
+                        <p class="content-paragraph"><span class="highlight-text">Entry:</span> Long at ₹1,201</p>
+                        <p class="content-paragraph"><span class="highlight-text">Stop-loss:</span> ₹1,198 (below resistance)</p>
+                        <p class="content-paragraph"><span class="highlight-text">Target:</span> Next resistance or measured move</p>
+                        <p class="content-paragraph"><span class="highlight-text">Logic:</span> Breakout signals sentiment shift and new uptrend</p>
+                    </div>
+                    
+                    <h4 class="subsection-heading">Breakout Confirmation Signals</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Volume Surge:</span> 2-3x average volume</li>
+                        <li class="content-list-item"><span class="highlight-text">Strong Candle:</span> Large body, minimal wicks</li>
+                        <li class="content-list-item"><span class="highlight-text">Follow-through:</span> Continued movement in breakout direction</li>
+                        <li class="content-list-item"><span class="highlight-text">No Immediate Reversal:</span> Price doesn't quickly return below level</li>
+                    </ul>
+                `
+      },
+      {
+        title: "Risk Management Techniques",
+        content: `
+                    <h2 class="section-heading">IV. Crucial Risk Management Techniques</h2>
+                    <p class="content-paragraph">Effective risk management separates successful intraday traders from unsuccessful ones. Without robust risk management, even the best strategies will eventually fail. Capital preservation is paramount.</p>
+                    
+                    <h3 class="subsection-heading">A. Setting Stop-Loss Orders</h3>
+                    <p class="content-paragraph">A stop-loss order is a pre-determined instruction to automatically sell a security when it reaches a specific price. It's your primary defense against large, unexpected losses.</p>
+                    
+                    <h4 class="subsection-heading">1. Definition and Importance</h4>
+                    <p class="content-paragraph">A stop-loss is the price where you exit a losing trade. It's where you admit your trade idea was wrong and cut losses before they escalate. Trading without stop-loss is like driving without brakes.</p>
+                    
+                    <h4 class="subsection-heading">2. Types of Stop-Loss</h4>
+                    
+                    <div class="highlight-box">
+                        <h4 class="subsection-heading">Fixed Stop-Loss</h4>
+                        <ul class="content-list">
+                            <li class="content-list-item">Fixed price level set when entering trade</li>
+                            <li class="content-list-item">Example: Buy at ₹100, stop-loss at ₹98</li>
+                            <li class="content-list-item">Limits loss to ₹2 per share</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="highlight-box">
+                        <h4 class="subsection-heading">Trailing Stop-Loss</h4>
+                        <ul class="content-list">
+                            <li class="content-list-item">Stop-loss moves up with stock price</li>
+                            <li class="content-list-item">Example: 2% trailing stop</li>
+                            <li class="content-list-item">Buy at ₹100, initial stop at ₹98</li>
+                            <li class="content-list-item">If stock moves to ₹105, stop adjusts to ₹102.90</li>
+                            <li class="content-list-item">Protects profits while allowing growth</li>
+                        </ul>
+                    </div>
+                    
+                    <h4 class="subsection-heading">3. Example: Calculating and Placing Stop-Loss</h4>
+                    
+                    <div class="highlight-box">
+                        <h4 class="subsection-heading">Stop-Loss Calculation</h4>
+                        <p class="content-paragraph"><span class="highlight-text">Trading Capital:</span> ₹1,00,000</p>
+                        <p class="content-paragraph"><span class="highlight-text">Risk per Trade:</span> 1% = ₹1,000</p>
+                        <p class="content-paragraph"><span class="highlight-text">Position:</span> 100 shares of Company E at ₹200</p>
+                        <p class="content-paragraph"><span class="highlight-text">Total Position:</span> ₹20,000</p>
+                        <p class="content-paragraph"><span class="highlight-text">Stop-Loss:</span> ₹190 (₹1,000 ÷ 100 shares = ₹10 per share)</p>
+                        <p class="content-paragraph"><span class="highlight-text">Action:</span> Place stop-loss order at ₹190 immediately after entry</p>
+                    </div>
+                    
+                    <h4 class="subsection-heading">Stop-Loss Best Practices</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Set Before Entry:</span> Decide stop-loss level before entering trade</li>
+                        <li class="content-list-item"><span class="highlight-text">Place Immediately:</span> Enter stop-loss order right after trade entry</li>
+                        <li class="content-list-item"><span class="highlight-text">Don't Move Against You:</span> Never move stop-loss to increase loss</li>
+                        <li class="content-list-item"><span class="highlight-text">Technical Levels:</span> Place below support for longs, above resistance for shorts</li>
+                        <li class="content-list-item"><span class="highlight-text">Account for Volatility:</span> Give room for normal price fluctuations</li>
+                    </ul>
+                `
+      },
+      {
+        title: "Position Sizing and Risk Calculation",
+        content: `
+                    <h2 class="section-heading">B. Position Sizing</h2>
+                    <p class="content-paragraph">Position sizing determines the appropriate number of shares to trade based on risk tolerance and specific trade setup. It's a crucial risk management aspect often overlooked by novice traders.</p>
+                    
+                    <h3 class="subsection-heading">1. Determining the Right Quantity of Shares</h3>
+                    <p class="content-paragraph">Instead of randomly deciding share quantity, position size should be a function of your stop-loss level and pre-defined risk per trade.</p>
+                    
+                    <h3 class="subsection-heading">2. Risk Per Trade Calculation</h3>
+                    <p class="content-paragraph">Common rule: Risk no more than 1-2% of total trading capital on a single trade. This ensures even a series of losing trades won't significantly deplete your account.</p>
+                    
+                    <div class="highlight-box">
+                        <h4 class="subsection-heading">Position Sizing Formula</h4>
+                        <p class="content-paragraph"><span class="highlight-text">Position Size = Maximum Risk per Trade ÷ (Entry Price - Stop-Loss Price)</span></p>
+                    </div>
+                    
+                    <h3 class="subsection-heading">3. Example: Limiting Risk to Percentage of Capital</h3>
+                    
+                    <div class="highlight-box">
+                        <h4 class="subsection-heading">Position Sizing Example</h4>
+                        <p class="content-paragraph"><span class="highlight-text">Trading Capital:</span> ₹1,00,000</p>
+                        <p class="content-paragraph"><span class="highlight-text">Risk per Trade:</span> 1% = ₹1,000</p>
+                        <p class="content-paragraph"><span class="highlight-text">Stock:</span> Company F at ₹50</p>
+                        <p class="content-paragraph"><span class="highlight-text">Stop-Loss:</span> ₹48</p>
+                        <p class="content-paragraph"><span class="highlight-text">Risk per Share:</span> ₹50 - ₹48 = ₹2</p>
+                        <p class="content-paragraph"><span class="highlight-text">Position Size:</span> ₹1,000 ÷ ₹2 = 500 shares</p>
+                        <p class="content-paragraph"><span class="highlight-text">Result:</span> If stop-loss hit, loss = 500 × ₹2 = ₹1,000 (exactly 1%)</p>
+                    </div>
+                    
+                    <h3 class="subsection-heading">C. Defining Risk-Reward Ratio</h3>
+                    <p class="content-paragraph">Risk-reward ratio compares potential profit to potential loss. A favorable ratio is essential for long-term profitability.</p>
+                    
+                    <h4 class="subsection-heading">1. Importance of Favorable Ratios</h4>
+                    <p class="content-paragraph">A 1:2 ratio means for every ₹1 risked, aim for ₹2 profit. A 1:3 ratio aims for ₹3 profit per ₹1 risk.</p>
+                    
+                    <div class="highlight-box">
+                        <h4 class="subsection-heading">Risk-Reward Impact</h4>
+                        <p class="content-paragraph"><span class="highlight-text">10 trades with 1:2 ratio, 50% win rate:</span></p>
+                        <ul class="content-list">
+                            <li class="content-list-item">5 winning trades × ₹2 profit = +₹10</li>
+                            <li class="content-list-item">5 losing trades × ₹1 loss = -₹5</li>
+                            <li class="content-list-item">Net Profit = +₹5</li>
+                        </ul>
+                        
+                        <p class="content-paragraph"><span class="highlight-text">Even with 40% win rate:</span></p>
+                        <ul class="content-list">
+                            <li class="content-list-item">4 winning trades × ₹2 profit = +₹8</li>
+                            <li class="content-list-item">6 losing trades × ₹1 loss = -₹6</li>
+                            <li class="content-list-item">Net Profit = +₹2</li>
+                        </ul>
+                    </div>
+                    
+                    <h4 class="subsection-heading">2. Example: Calculating Potential Profit vs Loss</h4>
+                    
+                    <div class="highlight-box">
+                        <h4 class="subsection-heading">Risk-Reward Calculation</h4>
+                        <p class="content-paragraph"><span class="highlight-text">Trade Setup:</span> Company G</p>
+                        <p class="content-paragraph"><span class="highlight-text">Entry:</span> ₹300</p>
+                        <p class="content-paragraph"><span class="highlight-text">Stop-Loss:</span> ₹295 (Risk = ₹5 per share)</p>
+                        <p class="content-paragraph"><span class="highlight-text">Target:</span> ₹315 (Reward = ₹15 per share)</p>
+                        <p class="content-paragraph"><span class="highlight-text">Risk-Reward Ratio:</span> ₹15 ÷ ₹5 = 3</p>
+                        <p class="content-paragraph"><span class="highlight-text">Result:</span> 1:3 ratio - very favorable setup</p>
+                    </div>
+                    
+                    <h4 class="subsection-heading">Risk Management Rules</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Minimum 1:2 Ratio:</span> Never take trades with less favorable ratios</li>
+                        <li class="content-list-item"><span class="highlight-text">Pre-define Targets:</span> Set profit targets before entering</li>
+                        <li class="content-list-item"><span class="highlight-text">Stick to Plan:</span> Don't move targets mid-trade</li>
+                        <li class="content-list-item"><span class="highlight-text">Quality over Quantity:</span> Wait for high-probability setups</li>
+                    </ul>
+                `
+      },
+      {
+        title: "Psychology and Discipline",
+        content: `
+                    <h2 class="section-heading">V. Psychological Aspects and Discipline</h2>
+                    <p class="content-paragraph">Mastering the psychological side of trading is often the final and most difficult hurdle. Your mindset and discipline are as important as your trading strategy and risk management.</p>
+                    
+                    <h3 class="subsection-heading">A. Capital Preservation</h3>
+                    <p class="content-paragraph">Primary goal should not be huge daily profits, but preserving trading capital. Profits follow if you stay in the game long enough.</p>
+                    
+                    <h4 class="subsection-heading">1. Protecting Trading Capital at All Costs</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item">Treat capital as your lifeblood</li>
+                        <li class="content-list-item">Without capital, you cannot trade</li>
+                        <li class="content-list-item">Be disciplined with risk management rules</li>
+                        <li class="content-list-item">Don't bend rules even when tempting</li>
+                    </ul>
+                    
+                    <h4 class="subsection-heading">2. Avoiding Over-Trading and Revenge Trading</h4>
+                    
+                    <div class="highlight-box">
+                        <h4 class="subsection-heading">Over-Trading</h4>
+                        <ul class="content-list">
+                            <li class="content-list-item">Taking too many trades out of boredom</li>
+                            <li class="content-list-item">Desire to be constantly in market</li>
+                            <li class="content-list-item">Leads to suboptimal setups</li>
+                            <li class="content-list-item">Racks up brokerage costs</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="highlight-box">
+                        <h4 class="subsection-heading">Revenge Trading</h4>
+                        <ul class="content-list">
+                            <li class="content-list-item">Immediately jumping into another trade after loss</li>
+                            <li class="content-list-item">Trying to win back lost money</li>
+                            <li class="content-list-item">Emotional response, not logical</li>
+                            <li class="content-list-item">Almost always leads to further losses</li>
+                        </ul>
+                    </div>
+                    
+                    <h3 class="subsection-heading">B. Daily Loss Limits</h3>
+                    <p class="content-paragraph">Just as you have risk limit per trade, you should have maximum loss limit for entire trading day.</p>
+                    
+                    <h4 class="subsection-heading">1. Setting Maximum Allowable Loss Per Day</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item">Fixed amount or percentage of capital</li>
+                        <li class="content-list-item">Example: Stop trading if lose 3% in single day</li>
+                        <li class="content-list-item">No matter what opportunities appear</li>
+                    </ul>
+                    
+                    <h4 class="subsection-heading">2. Importance of Sticking to the Limit</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item">Prevents single bad day from becoming catastrophic</li>
+                        <li class="content-list-item">Forces break to reassess strategy</li>
+                        <li class="content-list-item">Avoids downward spiral of emotional trading</li>
+                        <li class="content-list-item">Hallmark of disciplined, professional trader</li>
+                    </ul>
+                    
+                    <h3 class="subsection-heading">C. Maintaining Discipline</h3>
+                    <p class="content-paragraph">Discipline is the ability to consistently follow your trading plan and risk management rules, day in and day out, regardless of emotional state.</p>
+                    
+                    <h4 class="subsection-heading">1. Sticking to Your Trading Plan</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item">Trading plan is your roadmap to success</li>
+                        <li class="content-list-item">Should outline strategy, risk rules, daily routine</li>
+                        <li class="content-list-item">Once tested and confident, execute flawlessly</li>
+                        <li class="content-list-item">Deviating from plan is recipe for failure</li>
+                    </ul>
+                    
+                    <h4 class="subsection-heading">2. Avoiding Over-Confidence and Complacency</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item">After winning streak, easy to become over-confident</li>
+                        <li class="content-list-item">Start taking more risks or bending rules</li>
+                        <li class="content-list-item">Often when biggest losses occur</li>
+                        <li class="content-list-item">Treat every day as new day with same discipline</li>
+                    </ul>
+                `
+      },
+      {
+        title: "Emotional Control and Learning",
+        content: `
+                    <h2 class="section-heading">A. Emotional Control</h2>
+                    <p class="content-paragraph">Emotions are the enemy of successful trading. Learning to control them is paramount for consistent profitability.</p>
+                    
+                    <h3 class="subsection-heading">1. Managing Fear and Greed</h3>
+                    
+                    <div class="highlight-box">
+                        <h4 class="subsection-heading">Fear</h4>
+                        <ul class="content-list">
+                            <li class="content-list-item">Fear of losing money causes hesitation on valid setups</li>
+                            <li class="content-list-item">Exiting winning trades too early</li>
+                            <li class="content-list-item">FOMO causes chasing prices at suboptimal levels</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="highlight-box">
+                        <h4 class="subsection-heading">Greed</h4>
+                        <ul class="content-list">
+                            <li class="content-list-item">Holding winning trades too long hoping for more</li>
+                            <li class="content-list-item">Seeing them reverse and turn into losers</li>
+                            <li class="content-list-item">Taking excessive risk for bigger profits</li>
+                        </ul>
+                    </div>
+                    
+                    <h4 class="subsection-heading">Solution: Well-Defined Trading Plan</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item">Plan dictates entry, exit, stop-loss levels before trade</li>
+                        <li class="content-list-item">Removes need for emotional decision-making</li>
+                        <li class="content-list-item">Trust your plan and execute mechanically</li>
+                    </ul>
+                    
+                    <h3 class="subsection-heading">2. Avoiding Impulsive Decisions</h3>
+                    <ul class="content-list">
+                        <li class="content-list-item">Impulsive trading driven by emotion, not logic</li>
+                        <li class="content-list-item">Deviating from plan based on gut feeling</li>
+                        <li class="content-list-item">Always have clear reason for entering trade</li>
+                        <li class="content-list-item">If setup doesn't meet criteria, don't take trade</li>
+                    </ul>
+                    
+                    <h3 class="subsection-heading">B. Continuous Learning and Adaptation</h3>
+                    <p class="content-paragraph">Market is dynamic environment. What works today may not work tomorrow. Successful traders are lifelong learners constantly adapting.</p>
+                    
+                    <h4 class="subsection-heading">1. Reviewing Trades and Learning from Mistakes</h4>
+                    <p class="content-paragraph">At end of each trading day, review all trades - winners and losers:</p>
+                    
+                    <ul class="content-list">
+                        <li class="content-list-item">Did I follow my plan?</li>
+                        <li class="content-list-item">What did I do right?</li>
+                        <li class="content-list-item">What did I do wrong?</li>
+                        <li class="content-list-item">What can I learn from this trade?</li>
+                    </ul>
+                    
+                    <h4 class="subsection-heading">2. Adapting to Changing Market Conditions</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item">Markets can be trending, range-bound, or volatile</li>
+                        <li class="content-list-item">Strategy for trending market may not work in range-bound</li>
+                        <li class="content-list-item">Be aware of current market condition</li>
+                        <li class="content-list-item">Adjust strategy accordingly - trade less, use different indicators</li>
+                    </ul>
+                    
+                    <h3 class="subsection-heading">C. Importance of Trading Journal</h3>
+                    <p class="content-paragraph">Trading journal is detailed record of all trading activity. One of most powerful tools for improving performance.</p>
+                    
+                    <h4 class="subsection-heading">1. Tracking Trades, Emotions, and Lessons</h4>
+                    <div class="highlight-box">
+                        <h4 class="subsection-heading">Journal Should Include</h4>
+                        <ul class="content-list">
+                            <li class="content-list-item"><span class="highlight-text">Trade Details:</span> Entry, exit, stop-loss, position size, date, time</li>
+                            <li class="content-list-item"><span class="highlight-text">Reason for Trade:</span> Why enter? What was setup?</li>
+                            <li class="content-list-item"><span class="highlight-text">Emotions:</span> Feelings before, during, after trade</li>
+                            <li class="content-list-item"><span class="highlight-text">Outcome:</span> Profit or loss</li>
+                            <li class="content-list-item"><span class="highlight-text">Lessons Learned:</span> What learned from this trade?</li>
+                        </ul>
+                    </div>
+                    
+                    <h4 class="subsection-heading">Benefits of Journaling</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item">Identify strengths and weaknesses</li>
+                        <li class="content-list-item">Recognize recurring mistake patterns</li>
+                        <li class="content-list-item">Hold yourself accountable to trading plan</li>
+                        <li class="content-list-item">Provides objective data for rational decisions</li>
+                    </ul>
+                `
+      },
+      {
+        title: "Practical Tips for Success",
+        content: `
+                    <h2 class="section-heading">VI. Practical Tips for Intraday Trading Success</h2>
+                    <p class="content-paragraph">Beyond core principles of strategy, risk management, and psychology, here are practical tips to enhance your intraday trading performance:</p>
+                    
+                    <h3 class="subsection-heading">A. Choose Liquid Stocks</h3>
+                    <ul class="content-list">
+                        <li class="content-list-item">Always trade stocks with high liquidity (high trading volume)</li>
+                        <li class="content-list-item">Liquid stocks can be easily bought/sold without impacting price</li>
+                        <li class="content-list-item">Ensures quick entry/exit at desired price levels</li>
+                        <li class="content-list-item">Illiquid stocks have large bid-ask spreads and exit difficulties</li>
+                    </ul>
+                    
+                    <h3 class="subsection-heading">B. Follow the Trend</h3>
+                    <p class="content-paragraph">"The trend is your friend" - generally easier and more profitable to trade in direction of prevailing market trend.</p>
+                    
+                    <ul class="content-list">
+                        <li class="content-list-item">Strong market uptrend = focus on buying opportunities</li>
+                        <li class="content-list-item">Market downtrend = focus on short-selling opportunities</li>
+                        <li class="content-list-item">Trading against trend is high-risk strategy</li>
+                        <li class="content-list-item">Best left to experienced traders</li>
+                    </ul>
+                    
+                    <h3 class="subsection-heading">C. Use Technical Indicators Wisely</h3>
+                    <p class="content-paragraph">Technical indicators are valuable tools, but don't clutter charts with too many. This leads to "analysis paralysis."</p>
+                    
+                    <div class="highlight-box">
+                        <h4 class="subsection-heading">Recommended Indicator Combination</h4>
+                        <ul class="content-list">
+                            <li class="content-list-item"><span class="highlight-text">Moving Averages:</span> Identify trend direction</li>
+                            <li class="content-list-item"><span class="highlight-text">RSI:</span> Gauge momentum and overbought/oversold</li>
+                            <li class="content-list-item"><span class="highlight-text">Volume:</span> Confirm breakouts and reversals</li>
+                        </ul>
+                    </div>
+                    
+                    <h3 class="subsection-heading">D. Monitor Market News and Events</h3>
+                    <p class="content-paragraph">While intraday trading is primarily technical, be aware of major news and events that could impact market.</p>
+                    
+                    <ul class="content-list">
+                        <li class="content-list-item"><span class="highlight-text">Economic Data:</span> GDP, inflation, employment data</li>
+                        <li class="content-list-item"><span class="highlight-text">Central Bank Announcements:</span> Interest rate decisions, policy changes</li>
+                        <li class="content-list-item"><span class="highlight-text">Company News:</span> Earnings reports, M&A announcements</li>
+                        <li class="content-list-item">Avoid trading just before/after major announcements</li>
+                    </ul>
+                    
+                    <h3 class="subsection-heading">E. Start Small and Gradually Increase</h3>
+                    <ul class="content-list">
+                        <li class="content-list-item">When new to intraday trading, start with small capital</li>
+                        <li class="content-list-item">Allows gaining experience without risking significant money</li>
+                        <li class="content-list-item">Test strategy with real money but limited risk</li>
+                        <li class="content-list-item">As you become consistent and profitable, gradually increase capital</li>
+                    </ul>
+                    
+                    <h3 class="subsection-heading">F. Take Regular Breaks</h3>
+                    <ul class="content-list">
+                        <li class="content-list-item">Intraday trading is mentally demanding</li>
+                        <li class="content-list-item">Staring at charts for hours leads to fatigue</li>
+                        <li class="content-list-item">Poor decision-making when tired</li>
+                        <li class="content-list-item">Step away, stretch, do something unrelated to trading</li>
+                    </ul>
+                    
+                    <h3 class="subsection-heading">G. Don't Overtrade</h3>
+                    <p class="content-paragraph">One of biggest mistakes novice traders make is overtrading. They feel need to be in trade at all times.</p>
+                    
+                    <ul class="content-list">
+                        <li class="content-list-item">Leads to taking suboptimal setups</li>
+                        <li class="content-list-item">You are paid to wait for high-probability opportunities</li>
+                        <li class="content-list-item">If no good setups, perfectly fine not to trade</li>
+                        <li class="content-list-item">Patience is virtue in trading</li>
+                    </ul>
+                    
+                    <div class="highlight-box">
+                        <h4 class="subsection-heading">Quality Over Quantity</h4>
+                        <p class="content-paragraph">Better to make 2-3 high-quality trades per day than 20 mediocre ones. Focus on setups that meet all your criteria.</p>
+                    </div>
+                `
+      },
+      {
+        title: "Conclusion and Final Guidance",
+        content: `
+                    <h2 class="section-heading">VII. Conclusion</h2>
+                    
+                    <h3 class="subsection-heading">A. Recap of Key Intraday Trading Principles</h3>
+                    <p class="content-paragraph">Intraday trading is challenging but potentially rewarding endeavor. Success hinges on combination of well-defined strategy, stringent risk management, and unwavering psychological discipline.</p>
+                    
+                    <div class="highlight-box">
+                        <h4 class="subsection-heading">Key Principles to Remember</h4>
+                        <ul class="content-list">
+                            <li class="content-list-item"><span class="highlight-text">Educate Yourself:</span> Continuously learn about market and technical analysis</li>
+                            <li class="content-list-item"><span class="highlight-text">Have a Plan:</span> Develop trading plan and stick to it</li>
+                            <li class="content-list-item"><span class="highlight-text">Manage Risk:</span> Always use stop-loss, proper position sizing, define risk-reward</li>
+                            <li class="content-list-item"><span class="highlight-text">Control Emotions:</span> Master fear and greed, avoid impulsive decisions</li>
+                            <li class="content-list-item"><span class="highlight-text">Stay Disciplined:</span> Follow rules consistently, even when difficult</li>
+                            <li class="content-list-item"><span class="highlight-text">Learn from Experience:</span> Keep trading journal, learn from mistakes</li>
+                        </ul>
+                    </div>
+                    
+                    <h3 class="subsection-heading">B. Disclaimer: High Risk Involved</h3>
+                    <div class="highlight-box">
+                        <h4 class="subsection-heading">Important Risk Warning</h4>
+                        <p class="content-paragraph">Intraday trading involves high degree of risk and is not suitable for all investors. Potential for rapid losses is significant. Only trade with capital you can afford to lose.</p>
+                        
+                        <ul class="content-list">
+                            <li class="content-list-item">Past performance not indicative of future results</li>
+                            <li class="content-list-item">This guide for educational purposes only</li>
+                            <li class="content-list-item">Should not be considered financial advice</li>
+                            <li class="content-list-item">Consult qualified financial advisor before trading</li>
+                        </ul>
+                    </div>
+                    
+                    <h3 class="subsection-heading">C. Final Encouragement for Disciplined Traders</h3>
+                    <p class="content-paragraph">For those willing to put in time and effort to develop necessary skills and discipline, intraday trading can be fulfilling pursuit.</p>
+                    
+                    <h4 class="subsection-heading">What Intraday Trading Offers</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item">Unique challenge in financial markets</li>
+                        <li class="content-list-item">Opportunity to be your own boss</li>
+                        <li class="content-list-item">Potential for financial independence</li>
+                        <li class="content-list-item">Intellectual stimulation and growth</li>
+                    </ul>
+                    
+                    <h4 class="subsection-heading">Approach as Serious Business</h4>
+                    <ul class="content-list">
+                        <li class="content-list-item">Focus on process and consistency, not just profits</li>
+                        <li class="content-list-item">Increase chances of long-term success</li>
+                        <li class="content-list-item">Journey is marathon, not sprint</li>
+                        <li class="content-list-item">Stay patient, disciplined, never stop learning</li>
+                    </ul>
+                    
+                    <div class="highlight-box">
+                        <h4 class="subsection-heading">Partner with Falcon Futures</h4>
+                        <p class="content-paragraph">At Falcon Futures, we are committed to helping traders succeed in the Indian stock market. Our comprehensive approach combines education, technology, and support to give you the best chance of success in your intraday trading journey.</p>
+                        
+                        <p class="content-paragraph">Remember: Success in intraday trading comes to those who respect the market, manage risk diligently, and maintain unwavering discipline. Start your journey with proper preparation, realistic expectations, and commitment to continuous improvement.</p>
+                    </div>
+                    
+                    <h4 class="subsection-heading">Your Trading Journey Starts Now</h4>
+                    <p class="content-paragraph">Armed with knowledge from this comprehensive guide, you're better prepared to navigate the challenging but rewarding world of intraday trading. Remember to start small, learn continuously, and always prioritize capital preservation over quick profits.</p>
+                    
+                    <p class="content-paragraph">The market will always be there tomorrow. Make sure you are too.</p>
+                `
+      }
+    ]
+  }
+
+  init() {
+    this.loadPage(this.currentPage)
+    this.setupEventListeners()
+    this.updatePageIndicators()
+  }
+
+  setupEventListeners() {
+    // Navigation buttons
+    document.getElementById('prevBtn').addEventListener('click', () => this.previousPage())
+    document.getElementById('nextBtn').addEventListener('click', () => this.nextPage())
+
+    // Sidebar navigation
+    document.querySelectorAll('.navigation-link').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault()
+        const pageIndex = parseInt(e.currentTarget.dataset.page)
+        this.goToPage(pageIndex)
+      })
+    })
+
+    // Page number buttons
+    document.querySelectorAll('.page-number').forEach(button => {
+      button.addEventListener('click', (e) => {
+        const pageIndex = parseInt(e.currentTarget.dataset.page)
+        this.goToPage(pageIndex)
+      })
+    })
+
+    // Sidebar toggle
+    document.getElementById('sidebarToggle').addEventListener('click', () => {
+      document.getElementById('sidebar').classList.toggle('sidebar-collapsed')
+    })
+  }
+
+  loadPage(pageIndex) {
+    const page = this.pages[pageIndex]
+    if (page) {
+      document.getElementById('pageContent').innerHTML = page.content
+      this.currentPage = pageIndex
+      this.updatePageIndicators()
+      this.updateNavigationButtons()
+      this.updateSidebarActive()
+      
+      // Scroll to top of content
+      document.getElementById('pageContent').scrollTop = 0
+    }
+  }
+
+  updatePageIndicators() {
+    document.getElementById('currentPage').textContent = this.currentPage + 1
+    document.getElementById('totalPages').textContent = this.totalPages
+
+    // Update page number buttons
+    document.querySelectorAll('.page-number').forEach(button => {
+      button.classList.remove('active-page-number')
+      if (parseInt(button.dataset.page) === this.currentPage) {
+        button.classList.add('active-page-number')
+      }
+    })
+  }
+
+  updateNavigationButtons() {
+    const prevBtn = document.getElementById('prevBtn')
+    const nextBtn = document.getElementById('nextBtn')
+
+    prevBtn.disabled = this.currentPage === 0
+    nextBtn.disabled = this.currentPage === this.totalPages - 1
+
+    prevBtn.classList.toggle('disabled', this.currentPage === 0)
+    nextBtn.classList.toggle('disabled', this.currentPage === this.totalPages - 1)
+  }
+
+  updateSidebarActive() {
+    document.querySelectorAll('.navigation-link').forEach(link => {
+      link.classList.remove('active-link')
+      if (parseInt(link.dataset.page) === this.currentPage) {
+        link.classList.add('active-link')
+      }
+    })
+  }
+
+  previousPage() {
+    if (this.currentPage > 0) {
+      this.loadPage(this.currentPage - 1)
+    }
+  }
+
+  nextPage() {
+    if (this.currentPage < this.totalPages - 1) {
+      this.loadPage(this.currentPage + 1)
+    }
+  }
+
+  goToPage(pageIndex) {
+    if (pageIndex >= 0 && pageIndex < this.totalPages) {
+      this.loadPage(pageIndex)
+    }
+  }
+}
+
+// Initialize the guide when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+  new IntradayGuide()
+})
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/header-footer-loader.js"></script>
+    <script src="../../assets/js/main.js"></script>
+</body>
+</html>

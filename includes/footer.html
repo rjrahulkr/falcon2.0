@@ -1,0 +1,417 @@
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/919211725852" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Main Footer -->
+<footer class="footer bg-white pt-4 pb-2">
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Office Info -->
+        <div class="col-lg-4 col-md-6">
+          <div class="office-card">
+            <h4 class="fw-bold mb-3">Registered Office</h4>
+            <p class="mb-3"><strong>Address:</strong><br>
+              A-17, Sector-62, Noida,<br>
+              Uttar Pradesh-201309, India</p>
+
+            <div class="contact-item d-flex mb-2">
+              <i class="fas fa-envelope mt-1 me-2 text-warning"></i>
+              <span>hello@falconfutures.in</span>
+            </div>
+            <div class="contact-item d-flex mb-3">
+              <i class="fas fa-phone mt-1 me-2 text-warning"></i>
+              <span>+91 9211725852</span>
+            </div>
+
+            <div class="social-icons d-flex gap-2">
+              <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-6">
+          <h5 class="footer-heading fw-bold mb-3">Company</h5>
+          <ul class="footer-links list-unstyled">
+            <li class="mb-2"><a id="about-link" class="footer-link">About Us</a></li>
+            <li class="mb-2"><a href="#" class="footer-link">Careers</a></li>
+            <li class="mb-2"><a href="#" class="footer-link">Complaint Board</a></li>
+            <li class="mb-2"><a id="grievance-link" class="footer-link">Grievance</a></li>
+            <li class="mb-2"><a href="pages/legal/contact-us.html" class="footer-link">Contact Us</a></li>
+
+          </ul>
+        </div>
+
+        <!-- Legal Links -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-heading fw-bold mb-3">Legal</h5>
+          <ul class="footer-links list-unstyled">
+            <li class="mb-2"><a id="terms-link" class="footer-link">Terms & Conditions</a>
+            </li>
+            <li class="mb-2"><a id="privacy-link" class="footer-link">Privacy Policy</a></li>
+            <li class="mb-2"><a id="refund-link" class="footer-link">Refund Policy</a></li>
+            <li class="mb-2"><a id="disclaimer-link" class="footer-link">Disclaimer</a></li>
+            <li class="mb-2"><a id="disclosure-link" class="footer-link">Disclosure</a></li>
+          </ul>
+        </div>
+
+        <!-- Resources -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-heading fw-bold mb-3">Resources</h5>
+          <ul class="footer-links list-unstyled">
+            <li class="mb-2"><a id="stock-tips-link" class="footer-link">Stock Market Tips</a></li>
+            <li class="mb-2"><a id="investment-link" class="footer-link">Investment Tips</a></li>
+            <li class="mb-2"><a id="intraday-link" class="footer-link">Intraday Trading</a></li>
+            <li class="mb-2"><a id="longterm-link" class="footer-link">Long Term Stocks</a></li>
+            <li class="mb-2"><a id="bestshares-today" class="footer-link">Best Shares Today</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <!-- Disclaimer Section -->
+    <div class="disclaimer-section bg-light mt-4 py-3 border-top border-bottom">
+      <div class="">
+        <p class="disclaimer-text text-center mb-0 small">
+          We provide independent investment advice based on analysis and market data. Returns are subject to market
+          conditions. Please invest with awareness and caution.
+        </p>
+      </div>
+    </div>
+
+    <!-- Copyright Section -->
+    <div class="copyright-section pt-3">
+      <div class="">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+          <p class="copyright-text small mb-3 mb-md-0 text-center text-md-start">
+            © 2024 STOCKSENCE RESEARCH PRIVATE LIMITED. All Rights Reserved.
+          </p>
+          <div class="copyright-links d-flex flex-wrap justify-content-center justify-content-md-start gap-3">
+            <a id="privacy-link" class="footer-link " href="#">Privacy Policy</a>
+            <a id="terms-link" class="footer-link " href="#">Terms & Conditions</a>
+            <a id="refund-link" class="footer-link " href="#">Refund Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+</footer>
+<script>
+  const aboutLink = document.getElementById("about-link");
+
+  const paths = [
+    "../pages/about-us.html",
+    "../../pages/about-us.html",
+    "../../../pages/about-us.html"
+  ];
+
+  (function setAboutLink(index = 0) {
+    if (index >= paths.length) return;
+    fetch(paths[index], { method: "HEAD" })
+      .then(response => {
+        if (response.ok) {
+          aboutLink.href = paths[index];
+        } else {
+          setAboutLink(index + 1);
+        }
+      })
+      .catch(() => {
+        setAboutLink(index + 1);
+      });
+  })();
+</script>
+<script>
+  const grievanceAnchor = document.getElementById("grievance-link");
+
+  const grievancePaths = [
+    "pages/legal/grievance.html",
+    "../legal/grievance.html",
+    "legal/grievance.html"
+
+  ];
+
+  (function resolveGrievancePath(index = 0) {
+    if (index >= grievancePaths.length) return;
+    fetch(grievancePaths[index], { method: "HEAD" })
+      .then(response => {
+        if (response.ok) {
+          grievanceAnchor.href = grievancePaths[index];
+        } else {
+          resolveGrievancePath(index + 1);
+        }
+      })
+      .catch(() => {
+        resolveGrievancePath(index + 1);
+      });
+  })();
+</script>
+<script>
+  const disclosureAnchor = document.getElementById("disclosure-link");
+
+  const disclosurePaths = [
+    "pages/legal/disclosure.html",
+    "../legal/disclosure.html",
+    "legal/disclosure.html"
+  ];
+
+  (function resolveDisclosurePath(index = 0) {
+    if (index >= disclosurePaths.length) return;
+    fetch(disclosurePaths[index], { method: "HEAD" })
+      .then(response => {
+        if (response.ok) {
+          disclosureAnchor.href = disclosurePaths[index];
+        } else {
+          resolveDisclosurePath(index + 1);
+        }
+      })
+      .catch(() => {
+        resolveDisclosurePath(index + 1);
+      });
+  })();
+</script>
+<script>
+  const disclaimerAnchor = document.getElementById("disclaimer-link");
+
+  const disclaimerPaths = [
+    "pages/legal/disclaimer.html",
+    "../legal/disclaimer.html",
+    "legal/disclaimer.html"
+  ];
+
+  (function resolveDisclaimerPath(index = 0) {
+    if (index >= disclaimerPaths.length) return;
+    fetch(disclaimerPaths[index], { method: "HEAD" })
+      .then(response => {
+        if (response.ok) {
+          disclaimerAnchor.href = disclaimerPaths[index];
+        } else {
+          resolveDisclaimerPath(index + 1);
+        }
+      })
+      .catch(() => {
+        resolveDisclaimerPath(index + 1);
+      });
+  })();
+</script>
+<script>
+  const refundAnchor = document.getElementById("refund-link");
+
+  const refundPaths = [
+    "pages/legal/refund-policy.html",
+    "../legal/refund-policy.html",
+    "legal/refund-policy.html"
+  ];
+
+  (function resolveRefundPath(index = 0) {
+    if (index >= refundPaths.length) return;
+    fetch(refundPaths[index], { method: "HEAD" })
+      .then(response => {
+        if (response.ok) {
+          refundAnchor.href = refundPaths[index];
+        } else {
+          resolveRefundPath(index + 1);
+        }
+      })
+      .catch(() => {
+        resolveRefundPath(index + 1);
+      });
+  })();
+</script>
+<script>
+  const privacyAnchor = document.getElementById("privacy-link");
+
+  const privacyPaths = [
+    "pages/legal/privacy-policy.html",
+    "../legal/privacy-policy.html",
+    "legal/privacy-policy.html"
+  ];
+
+  (function resolvePrivacyPath(index = 0) {
+    if (index >= privacyPaths.length) return;
+    fetch(privacyPaths[index], { method: "HEAD" })
+      .then(response => {
+        if (response.ok) {
+          privacyAnchor.href = privacyPaths[index];
+        } else {
+          resolvePrivacyPath(index + 1);
+        }
+      })
+      .catch(() => {
+        resolvePrivacyPath(index + 1);
+      });
+  })();
+</script>
+<script>
+  const termsAnchor = document.getElementById("terms-link");
+
+  const termsPaths = [
+    "pages/legal/terms-and-conditions.html",
+    "../legal/terms-and-conditions.html",
+    "legal/terms-and-conditions.html"
+  ];
+
+  (function resolveTermsPath(index = 0) {
+    if (index >= termsPaths.length) return;
+    fetch(termsPaths[index], { method: "HEAD" })
+      .then(response => {
+        if (response.ok) {
+          termsAnchor.href = termsPaths[index];
+        } else {
+          resolveTermsPath(index + 1);
+        }
+      })
+      .catch(() => {
+        resolveTermsPath(index + 1);
+      });
+  })();
+</script>
+<script>
+  const investmentTipPaths = [
+    "pages/important-links/stock-market-tips.html",
+    "../important-links/stock-market-tips.html",
+    "important-links/stock-market-tips.html"
+  ];
+
+  const stockTipsLinkElement = document.getElementById("stock-tips-link");
+
+  async function setValidInvestmentTipsLink() {
+    for (const tipPath of investmentTipPaths) {
+      try {
+        const response = await fetch(tipPath, { method: 'HEAD' });
+
+        if (response.ok) {
+          stockTipsLinkElement.href = tipPath;
+          console.log(`Valid path found: ${tipPath}`);
+          break;
+        }
+      } catch (error) {
+        console.warn(`Path failed: ${tipPath}`);
+        // continue to the next path
+      }
+    }
+  }
+
+  setValidInvestmentTipsLink();
+</script>
+<script>
+  const investmentTips = [
+    "pages/important-links/investment-tips.html",
+    "../important-links/investment-tips.html",
+    "important-links/investment-tips.html"
+  ];
+
+  const investmentLink = document.getElementById("investment-link");
+
+  (async () => {
+    for (const path of investmentTips) {
+      try {
+        const response = await fetch(path, { method: "HEAD" });
+        if (response.ok) {
+          investmentLink.href = path;
+          break;
+        }
+      } catch (error) {
+        // Ignore errors and try next path
+      }
+    }
+  })();
+</script>
+<script>
+  const intradayTips = [
+    "pages/important-links/intraday-trading-tips.html",
+    "../important-links/intraday-trading-tips.html",
+    "important-links/intraday-trading-tips.html"
+  ];
+
+  const intradayLink = document.getElementById("intraday-link");
+
+  (async () => {
+    for (const path of intradayTips) {
+      try {
+        const response = await fetch(path, { method: "HEAD" });
+        if (response.ok) {
+          intradayLink.href = path;
+          break;
+        }
+      } catch (error) {
+        // Ignore errors and try next path
+      }
+    }
+  })();
+</script>
+<script>
+  const longTermStocks = [
+    "pages/important-links/long-term-stocks.html",
+    "../important-links/long-term-stocks.html",
+    "important-links/long-term-stocks.html"
+  ];
+
+  const longtermLink = document.getElementById("longterm-link");
+
+  (async () => {
+    for (const path of longTermStocks) {
+      try {
+        const response = await fetch(path, { method: "HEAD" });
+        if (response.ok) {
+          longtermLink.href = path;
+          break;
+        }
+      } catch (error) {
+        // Ignore errors and try next path
+      }
+    }
+  })();
+</script>
+<script>
+  const bestSharesToday = [
+    "pages/important-links/best-shares-today.html",
+    "../important-links/best-shares-today.html",
+    "important-links/best-shares-today.html"
+  ];
+
+  const bestSharesLink = document.getElementById("bestshares-today");
+
+  (async () => {
+    for (const path of bestSharesToday) {
+      try {
+        const response = await fetch(path, { method: "HEAD" });
+        if (response.ok) {
+          bestSharesLink.href = path;
+          break;
+        }
+      } catch (error) {
+        // Ignore errors and try next path
+      }
+    }
+  })();
+</script>
+<script>
+  $(document).ready(function () {
+    // Add smooth scrolling to footer links
+    $('.footer-link').on('click', function (e) {
+      if (this.hash !== "") {
+        e.preventDefault();
+        const hash = this.hash;
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top - 80
+        }, 800);
+      }
+    });
+
+    // WhatsApp button animation
+    $('.whatsapp-float').hover(
+      function () {
+        $(this).css('transform', 'scale(1.1)');
+      },
+      function () {
+        $(this).css('transform', 'scale(1)');
+      }
+    );
+  });
+</script>

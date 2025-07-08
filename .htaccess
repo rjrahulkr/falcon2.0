@@ -1,0 +1,67 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Remove trailing slashes
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+    # Redirect .html URLs to clean versions
+    RewriteCond %{THE_REQUEST} \s/+(.*?)\.html[\s?] [NC]
+    RewriteRule ^ /%1 [R=301,L,NE]
+
+    # Allow existing files and directories to be accessed directly
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    # Main pages routing
+    RewriteRule ^(about-us|services|pricing|complaint-board|investo-charter|careers)$ pages/$1.html [L]
+
+    # Services routing
+    RewriteRule ^services/(stock-cash|stock-future|stock-option|commodity|bullions|base-metals|energy|hni)$ services/$1.html [L]
+
+    # Pricing routing
+    RewriteRule ^pricing/(regular|premium|ultra-premium)$ services/pricing/$1.html [L]
+
+    # Legal pages routing
+    RewriteRule ^(privacy-policy|terms-and-conditions|refund-policy|disclaimer|grievance|disclosure)$ services/legal/$1.html [L]
+
+    # Important links routing
+    RewriteRule ^(stock-market-tips|investment-tips|intraday-trading-tips|long-term-stocks|best-shares-today|consent-form)$ services/important-links/$1.html [L]
+
+    # Default .html handling (must come last)
+    RewriteCond %{REQUEST_FILENAME}.html -f
+    RewriteRule ^(.*)$ $1.html [L]
+
+    # Homepage fallback
+    RewriteRule ^$ index.html [L]
+</IfModule>
+
+# Security headers
+<IfModule mod_headers.c>
+    Header set X-XSS-Protection "1; mode=block"
+    Header always append X-Frame-Options SAMEORIGIN
+    Header set X-Content-Type-Options nosniff
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Enable compression
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript
+</IfModule>
+
+# Cache control
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpg "access 1 year"
+    ExpiresByType image/jpeg "access 1 year"
+    ExpiresByType image/gif "access 1 year"
+    ExpiresByType image/png "access 1 year"
+    ExpiresByType text/css "access 1 month"
+    ExpiresByType text/html "access 1 month"
+    ExpiresByType application/pdf "access 1 month"
+    ExpiresByType text/x-javascript "access 1 month"
+    ExpiresByType application/x-shockwave-flash "access 1 month"
+    ExpiresByType image/x-icon "access 1 year"
+    ExpiresDefault "access 1 month"
+</IfModule>

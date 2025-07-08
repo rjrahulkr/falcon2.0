@@ -1,0 +1,352 @@
+<!-- Top Header -->
+<div class="top-header" id="topHeader">
+    <div class="container">
+        <div class="email">
+            <a href="mailto:hello@falconfutures.in">📧 hello@falconfutures.in</a>
+        </div>
+        <div class="marquee-container">
+            <div class="marquee">
+                <span>"Securities market investments carry inherent risks. Please review all relevant documents thoroughly before making any investment decisions."</span>
+            </div>
+        </div>
+        <div class="phone">
+            <a href="tel:+919211725852">📞 +91 9211725852</a>
+        </div>
+    </div>
+</div>
+
+<!-- Header Navigation -->
+<header class="falcon-header" id="mainHeader">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-0">
+        <div class="container">
+            <!-- Brand Logo -->
+            <a id="home-link" class="navbar-brand">
+                <img id="logo-img" src="" alt="Falcon Futures" class="d-inline-block align-text-top logo-img">
+            </a>
+
+            <!-- Mobile Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#falconNav" aria-controls="falconNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation Menu -->
+            <div class="collapse navbar-collapse" id="falconNav">
+                <ul class="navbar-nav mx-auto">
+                    <!-- Home -->
+                    <li class="nav-item">
+                        <a id="link-hom" class="nav-link" href="#">Home</a>
+                    </li>
+
+                    <!-- Services Dropdown -->
+                    <li class="nav-item dropdown dropdown-hover">
+                        <a class="nav-link dropdown-toggles" href="#" id="servicesDropdown">Services +</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" id="mainHeader" href="#">All Services</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a id="link-stock-cash" class="dropdown-item" href="#">Stock Cash</a></li>
+                            <li><a id="link-stock-future" class="dropdown-item" href="#">Stock Future</a></li>
+                            <li><a id="link-stock-option" class="dropdown-item" href="#">Stock Option</a></li>
+                            <li><a id="link-commodity" class="dropdown-item" href="#">Commodity</a></li>
+                            <li><a id="link-bullions" class="dropdown-item" href="#">Bullions</a></li>
+                            <li><a id="link-base-metals" class="dropdown-item" href="#">Base Metals</a></li>
+                            <li><a id="link-energy" class="dropdown-item" href="#">Energy</a></li>
+                            <li><a id="link-hni" class="dropdown-item" href="#">HNI Services</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Pricing Dropdown -->
+                    <li class="nav-item dropdown dropdown-hover">
+                        <a class="nav-link dropdown-toggles" href="#" id="pricingDropdown">Pricing +</a>
+                        <ul class="dropdown-menu">
+                            <li><a id="pricingLink" class="dropdown-item">Pricing Overview</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a id="link-regular-plan" class="dropdown-item" href="#">Regular Plan</a></li>
+                            <li><a id="link-premium-plan" class="dropdown-item" href="#">Premium Plan</a></li>
+                            <li><a id="link-ultra-premium-plan" class="dropdown-item" href="#">Ultra Premium Plan</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Market Tips Dropdown -->
+                    <li class="nav-item dropdown dropdown-hover">
+                        <a class="nav-link dropdown-toggles" href="#" id="tipsDropdown">Market Tips +</a>
+                        <ul class="dropdown-menu">
+                            <li><a id="link-stock-market-tips" class="dropdown-item" href="#">Stock Market Tips</a></li>
+                            <li><a id="link-investment-tips" class="dropdown-item" href="#">Investment Tips</a></li>
+                            <li><a id="link-intraday-trading-tips" class="dropdown-item" href="#">Intraday Trading Tips</a></li>
+                            <li><a id="link-long-term-stocks" class="dropdown-item" href="#">Long Term Stocks</a></li>
+                            <li><a id="link-best-shares-today" class="dropdown-item" href="#">Best Shares Today</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Static pages -->
+                    <li class="nav-item"><a id="link-about-us" class="nav-link" href="#">About Us</a></li>
+                    <li class="nav-item"><a id="link-investo-charter" class="nav-link" href="#">Investor Charter</a></li>
+                </ul>
+
+                <!-- Call To Action Button -->
+                <div class="d-flex ms-lg-3">
+                    <a id="contactLink" class="btn btn-primary px-4">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<script>
+    const topHeader = document.getElementById('topHeader');
+    const mainHeader = document.getElementById('mainHeader');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            topHeader.classList.add('hidden');
+            mainHeader.classList.add('scrolled');
+        } else {
+            topHeader.classList.remove('hidden');
+            mainHeader.classList.remove('scrolled');
+        }
+    });
+</script>
+
+<script>
+    const homeLink = document.getElementById("home-link");
+    const logoImg = document.getElementById("logo-img");
+
+    fetch("../index.html", { method: "HEAD" })
+        .then(response => {
+            homeLink.href = response.ok ? "../index.html" : "../../index.html";
+        })
+        .catch(() => {
+            homeLink.href = "../../index.html";
+        });
+
+    fetch("../assets/image/logo.png", { method: "HEAD" })
+        .then(response => {
+            logoImg.src = response.ok ? "../assets/image/logo.png" : "../../assets/image/logo.png";
+        })
+        .catch(() => {
+            logoImg.src = "../../assets/image/logo.png";
+        });
+</script>
+
+<script>
+    const homLink = { id: "link-hom", paths: ["../index.html", "../../index.html"] };
+    const element = document.getElementById(homLink.id);
+
+    fetch(homLink.paths[0], { method: "HEAD" })
+        .then(response => {
+            element.href = response.ok ? homLink.paths[0] : homLink.paths[1];
+        })
+        .catch(() => {
+            element.href = homLink.paths[1];
+        });
+</script>
+
+<script>
+    const links = [
+        { id: "link-stock-cash", path: "stock-cash.html" },
+        { id: "link-stock-future", path: "stock-future.html" },
+        { id: "link-stock-option", path: "stock-option.html" },
+        { id: "link-commodity", path: "commodity.html" },
+        { id: "link-bullions", path: "bullions.html" },
+        { id: "link-base-metals", path: "base-metals.html" },
+        { id: "link-energy", path: "energy.html" },
+        { id: "link-hni", path: "hni.html" }
+    ];
+
+    links.forEach(link => {
+        const element = document.getElementById(link.id);
+        const path1 = `../pages/services/${link.path}`;
+        const path2 = `../services/${link.path}`;
+
+        fetch(path1, { method: "HEAD" })
+            .then(response => {
+                element.href = response.ok ? path1 : path2;
+            })
+            .catch(() => {
+                element.href = path2;
+            });
+    });
+</script>
+
+<script>
+    const pricingLink = document.getElementById("pricingLink");
+
+    const pricingPath = [
+        "../pages/pricing.html",
+        "pages/pricing.html",
+        "../../pages/pricing.html"
+    ];
+
+    async function findValidPath(paths) {
+        for (let path of paths) {
+            try {
+                const response = await fetch(path, { method: 'HEAD' });
+                if (response.ok) {
+                    return path;
+                }
+            } catch (e) {
+                // Skip to next path on error
+            }
+        }
+        return null;
+    }
+
+    findValidPath(pricingPath).then(validPath => {
+        if (validPath) {
+            pricingLink.href = validPath;
+        } else {
+            pricingLink.href = "#";
+            pricingLink.textContent += " (Unavailable)";
+        }
+    });
+</script>
+
+<script>
+    const pricingLinks = [
+        { id: "link-regular-plan", path: "regular.html" },
+        { id: "link-premium-plan", path: "premium.html" },
+        { id: "link-ultra-premium-plan", path: "ultra-premium.html" }
+    ];
+
+    pricingLinks.forEach(link => {
+        const element = document.getElementById(link.id);
+        const path1 = `../pages/pricing/${link.path}`;
+        const path2 = `../pricing/${link.path}`;
+
+        fetch(path1, { method: "HEAD" })
+            .then(response => {
+                element.href = response.ok ? path1 : path2;
+            })
+            .catch(() => {
+                element.href = path2;
+            });
+    });
+</script>
+
+<script>
+    const importantLinks = [
+        { id: "link-stock-market-tips", path: "stock-market-tips.html" },
+        { id: "link-investment-tips", path: "investment-tips.html" },
+        { id: "link-intraday-trading-tips", path: "intraday-trading-tips.html" },
+        { id: "link-long-term-stocks", path: "long-term-stocks.html" },
+        { id: "link-best-shares-today", path: "best-shares-today.html" }
+    ];
+
+    importantLinks.forEach(link => {
+        const element = document.getElementById(link.id);
+        const path1 = `../pages/important-links/${link.path}`;
+        const path2 = `../important-links/${link.path}`;
+        
+
+        fetch(path1, { method: "HEAD" })
+            .then(response => {
+                element.href = response.ok ? path1 : path2;
+            })
+            .catch(() => {
+                element.href = path2;
+            });
+    });
+
+    const pageLinks = [
+        { id: "link-about-us", paths: ["../about-us.html", "../pages/about-us.html"] },
+        { id: "link-investo-charter", paths: ["../investo-charter.html", "../pages/investo-charter.html"] }
+    ];
+
+    pageLinks.forEach(link => {
+        const element = document.getElementById(link.id);
+        fetch(link.paths[0], { method: "HEAD" })
+            .then(response => {
+                element.href = response.ok ? link.paths[0] : link.paths[1];
+            })
+            .catch(() => {
+                element.href = link.paths[1];
+            });
+    });
+</script>
+
+<script>
+    const contactLink = document.getElementById("contactLink");
+
+    const possiblePaths = [
+        "../includes/contactForm.html",
+        "includes/contactForm.html",
+        "../../includes/contactForm.html"
+    ];
+
+    async function findValidPath(paths) {
+        for (let path of paths) {
+            try {
+                const response = await fetch(path, { method: 'HEAD' });
+                if (response.ok) {
+                    return path;
+                }
+            } catch (e) {
+            }
+        }
+        return null;
+    }
+
+    findValidPath(possiblePaths).then(validPath => {
+        if (validPath) {
+            contactLink.href = validPath;
+        } else {
+            contactLink.href = "#";
+            contactLink.textContent += " (Unavailable)";
+        }
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+        // Sticky header on scroll
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('.falcon-header');
+            header.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // Highlight current active link
+        const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+        document.querySelectorAll('.nav-link, .dropdown-item').forEach(link => {
+            const href = link.getAttribute('href');
+            if (href && (href.endsWith(currentPath) || (currentPath.includes('?') && href.includes(currentPath.split('?')[0])))) {
+                link.classList.add('active');
+                if (link.classList.contains('dropdown-item')) {
+                    link.closest('.dropdown').querySelector('.dropdown-toggles').classList.add('active');
+                }
+            }
+        });
+
+        // Collapse mobile menu on link click
+        document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+            link.addEventListener('click', function () {
+                if (window.innerWidth < 992) {
+                    const collapse = new bootstrap.Collapse(document.getElementById('falconNav'));
+                    collapse.hide();
+                }
+            });
+        });
+
+        // Animate dropdown on hover
+        document.querySelectorAll('.dropdown').forEach(dropdown => {
+            dropdown.addEventListener('mouseenter', function () {
+                const menu = this.querySelector('.dropdown-menu');
+                menu.style.display = 'block';
+                setTimeout(() => {
+                    menu.style.opacity = '1';
+                    menu.style.visibility = 'visible';
+                    menu.style.transform = 'translateY(0)';
+                }, 10);
+            });
+
+            dropdown.addEventListener('mouseleave', function () {
+                const menu = this.querySelector('.dropdown-menu');
+                menu.style.opacity = '0';
+                menu.style.visibility = 'hidden';
+                menu.style.transform = 'translateY(10px)';
+                setTimeout(() => {
+                    menu.style.display = 'none';
+                }, 300);
+            });
+        });
+    });
+</script>
